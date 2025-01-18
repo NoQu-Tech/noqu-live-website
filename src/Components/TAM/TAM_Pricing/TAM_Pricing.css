@@ -1,0 +1,204 @@
+.TAM_Pricing{
+    background:url('../../../assets/TAM/TAM_bg.svg') no-repeat;
+    background-size:contain;
+}
+.TAM_Pricing_head{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TAM_Pricing_head img{
+    width: 80%;
+    z-index: 2;
+    margin-top: 50px;
+}
+.TAM_Pricing_head h5{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-size: 16px;
+    margin-left: 70%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.TAM_Pricing_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.TAM_Pricing_list h1{
+    text-align: center;
+}
+.TAM_Pricing_list p{
+    font-size: 13px;
+    margin-bottom: 1rem;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align:center;
+    width: 70%;
+}
+.TAM_Pricing_list_container{
+    display: flex;
+    margin-top: 70px;
+}
+.TAM_Pricing_list_container-box1,
+.TAM_Pricing_list_container-box2,
+.TAM_Pricing_list_container-box3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 25px;
+}
+.TAM_Pricing_list_container-box1{
+    overflow: hidden;
+    color: #0076bc;
+    border: 1px solid #0076bc;
+    margin-top: 80px;
+    height: 650px;
+}
+.TAM_Pricing_list_container-box3{
+    overflow: hidden;
+    color: #5e09b3;
+    border: 1px solid #5e09b3;
+    background:url('../../../assets/TAM/price3.png') no-repeat;
+    background-size:contain;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    height: 650px;
+}
+.TAM_Pricing_list_container-box2{
+    overflow: hidden;
+    color: #d0316c;
+    border: 1px solid #d0316c;
+    background:url('../../../assets/TAM/price2.png') no-repeat;
+    background-size:contain;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    height: 780px;
+}
+.TAM_Pricing_list_container-box2 .TAM_Pricing_avd,
+.TAM_Pricing_list_container-box3 .TAM_Pricing_avd{
+    margin-top: 180px;
+}
+.box2_head {
+    width: 200px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2_head h1{
+    font-size: 30px;
+    color: #fff;
+
+}
+.box1_head{
+    width: 110%;
+    position: relative;
+    top: -10px;
+    left: -20px;
+    height: 250px;
+    background:url('../../../assets/TAM/price1.png') no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+.box1_head h1{
+    margin-top: 50px;
+    margin-left: 15px;
+    border: 3px solid white;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 4px;
+}
+.TAM_Pricing_avd li{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 15px 25px;
+}
+.TAM_Pricing_avd li span{
+    margin-right: 10px;
+}
+.TAM_Pricing_avd{
+    margin-top: 20px;
+}
+.TAM_Pricing_list button{
+    padding: 10px 35px;
+    border: none;
+    border-radius: 30px;
+    color: #FFF;
+    background-color: #27375d;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 100px;
+}
+@media screen and (max-width: 780px){
+    .TAM_Pricing_list {
+        margin-top: 100px;
+    }
+    .TAM_Pricing_list_container-box1,
+    .TAM_Pricing_list_container-box2,
+    .TAM_Pricing_list_container-box3{
+        width: 250px;
+    }
+    .box2_head {
+        width: 200px;
+        height: 50px;
+        border: 3px solid #fff;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .TAM_Pricing_list h1 {
+        margin-bottom: 0px;
+    }
+    .TAM_Pricing_head h5{
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 550px){
+    .TAM_Pricing_head h5{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .TAM_Pricing_list {
+        margin-top: 50px;
+    }
+    .TAM_Pricing_list h1{
+        font-size: 3rem;
+    }
+    .TAM_h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .TAM_Pricing_list_container {
+        flex-direction: column;
+    }
+    .TAM_Pricing_list_container-box3{
+        margin-top: 0px;
+    }
+    .TAM_Pricing_list_container-box1{
+        margin-top: 0px;
+    }
+    .TAM_Pricing_head img{
+        z-index: 2;
+        margin-top: 50px;
+    }
+}   

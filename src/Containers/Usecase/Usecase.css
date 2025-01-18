@@ -1,0 +1,64 @@
+.usecase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+.usecase:hover{
+    scale: 1.1;
+    -webkit-box-shadow: 3px 3px 31px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 31px -3px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 31px -3px rgba(0,0,0,0.75);
+    border-radius: 15px;
+
+}
+.usecase-img {
+    height: 40%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.usecase-img img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.usecase-container{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.usecase h5{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "poppins";
+    color: #27375d;
+    text-align: center;
+}
+.usecase p{
+    font-family: "poppins";
+    margin: 10px 15px;
+    font-size: 12px;
+    text-align: justify;
+}
+@media screen and (max-width: 550px){
+    .usecase{
+        width: 200px;
+        height: 220px;
+    }
+    .usecase img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .usecase h5{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}

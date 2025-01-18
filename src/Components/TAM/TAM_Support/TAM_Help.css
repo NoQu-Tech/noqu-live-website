@@ -1,0 +1,63 @@
+.TAM_Help h1{
+    margin-bottom: 10px;
+}
+.TAM_Help{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.TAM_Help p{
+    /* width: 85%; */
+    font-size: 13px;
+    margin-bottom: 1rem;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.TAM_Help-content{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(238, 238, 238);
+    gap: 20px;
+    margin-top: 10px;
+}
+.TAM_Help-content p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+.TAM_Help-content button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: #FFF;
+    background-color: #27375d;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media screen and (max-width: 550px){
+    .TAM_Help-content{
+        padding: 80px 50px;
+    }
+    .TAM_Help h1{
+        margin-bottom: 10px;
+        font-size: 3rem;
+    }
+    .TAM_Help p{
+        width: 90%;
+        text-align: center;
+    }
+    .TAM_Help-content p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+}

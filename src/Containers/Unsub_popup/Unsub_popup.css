@@ -1,0 +1,198 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+
+.popup-background{
+  background: #fff;
+  background-image: url('../../assets/bg4.png');
+  background-repeat: no-repeat;
+  /* background-position:bottom left; */
+  /* background-size: cover; */
+  background-position: center;
+  background-size: 1000px;
+
+  border-radius: 5px;
+  height: auto;
+}
+  .popup-content {
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 550px;
+  }
+  .popup-content p{
+    width: 90%;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align:center;
+  }
+  .popup-content h2{
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+
+  }
+  .popup-content label{
+    margin-top: 10px;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+  }
+  .popup-content input{
+    width: 250px;
+    height: 35px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px solid #ffbb08;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .popup-content textarea{
+    width: 250px;
+    height: 55px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px solid #ffbb08;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .Unsub_feedback_row{
+    display: flex;
+    flex-direction: column;
+  }
+  .Unsub_feedback_row select{
+    width: 250px;
+    height: 35px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px solid #ffbb08;
+    border-radius: 5px;
+    padding: 5px;
+    color: #5e5e5e;
+  }
+  .Unsub_feedback_row p{
+    margin-top: 2px;
+    color: red;
+    font-family: "Poppins", sans-serif;
+  }
+  .popup-close{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+  }
+  .popup-close span{
+    margin: 5px;
+  }
+  .popup-close img{
+    width: 50px;
+    margin: 10px;
+  }
+  .popup-content span{
+    font-size: 30px;
+    cursor: pointer;
+    text-align:right;
+  }
+
+  .popup-content button{
+    padding: 10px 20px;
+    margin-top: 25px;
+    background-color: #27375d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100px;
+    color: #fff;
+  }
+  .Unsub_feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blurred {
+    filter: blur(5px);
+  }
+
+  .unsub_complete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 10px 5px; */
+    height: 80%;
+  }
+  .unsub_complete img{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .unsub_complete p{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+  .unsub_err{
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    /* padding: 10px 10px; */
+    margin-top: 10px;
+    /* background-color: rgb(255, 85, 85); */
+    color: red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 500px){
+    .popup-content {
+      width: 300px;
+      height: auto;
+    }
+    .popup-content p{
+      font-size: 11px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+    .popup-content h2{
+      font-size: 23px;
+      margin-bottom: 1rem;
+    }
+    .popup-content input{
+      width: 200px;
+      height: 30px;
+      padding: 10px;
+      font-size: 12px;
+    }
+    .popup-content textarea{
+      width: 200px;
+      height: 30px;
+      padding: 10px;
+      font-size: 12px;
+    }
+    .Unsub_feedback_row select{
+      width: 200px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .popup-background{
+      background-position: center;
+      background-size: 850px;
+      border-radius: 5px;
+      height: auto;
+    }
+
+  }

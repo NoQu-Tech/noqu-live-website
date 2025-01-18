@@ -1,0 +1,45 @@
+.Service{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Service img{
+    width: 120px;
+    height: 90px;
+}
+.Service h6{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #27375d;
+    font-family: "Poppins";
+    margin: 10px 0px;
+}
+.Service p{
+    font-size: 14px;
+    padding: 10px 10px;
+    line-height: 22px;
+    font-family: "Poppins";
+    text-align: justify;
+    color: #5e5e5e;
+}
+@media screen and (max-width: 380px){
+    .Service{
+        width: 300px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 780px){
+    .Service{
+        width: 340px;
+    }
+    .Service img{
+        width: 80px;
+        height: 70px;
+        margin-top: 10px;
+    }
+}

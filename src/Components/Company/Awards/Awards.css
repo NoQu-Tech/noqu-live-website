@@ -1,0 +1,68 @@
+.awards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.awards h1{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    margin-top:100px; 
+    margin-bottom: 50px;
+}
+.award_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px;
+
+}
+.award_section a{
+    text-decoration: none;
+    color: inherit;
+}
+.award_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+    border: 1px solid #fea500;
+    border-radius: 25px;
+}
+.award_1 img{
+    width: 250px;
+    height: 300px;
+}
+.award_1 h5{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 780px){
+    .award_section {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .award_1 img{
+        width: 200px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1440px){
+    .award_1 img{
+        width: 200px;
+        height: 250px;
+    }
+    .award_section {
+        gap: 10px;
+    }
+}

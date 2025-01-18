@@ -1,0 +1,228 @@
+/* .SAD_Overlay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+} */
+
+.SAD {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 430px;
+    background-color: #fff;
+    height: 450px;
+    border: 1px solid #ffbb08;
+    overflow-y: scroll;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 10;
+}
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(500px);
+        transform: translateY(500px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(500px);
+        transform: translateY(500px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+  }
+  
+.SAD_form_close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+.SAD_form_close p {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.SAD_from_head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.SAD_from_head h5 {
+    font-size: 18px;
+}
+
+.SAD_form_input_row label img {
+    width: 20px;
+}
+
+.SAD_form_countryCode img {
+    width: 20px;
+}
+.SAD_form_inputs{
+    padding-top: 55px;
+}
+.SAD_form_input_row {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 15px 0px;
+    margin-left: 20px;
+    padding: 0px 10px;
+    border: 1px solid #cccccc;
+    height: 40px !important;
+    border-radius: 25px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.SAD_form_input_row input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline-width: 0;
+    font-size: 14px;
+    color: #5e5e5e !important;
+    margin-left: 10px;
+    background-color: #fff;
+}
+input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #5e5e5e !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+  }
+
+.SAD_form_input_row select {
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline-width: 0;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #5e5e5e;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.SAD_form_Ph_num {
+    display: flex;
+    width: 75%;
+    margin: 10px 0px;
+    margin-left: 20px;
+}
+
+.SAD_form_Ph_num input {
+    width: 65%;
+    border-radius: 25px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    outline-width: 0;
+    padding: 0px 20px;
+    font-size: 14px;
+    color: #5e5e5e !important;
+    background-color: transparent;
+    background-color: #fff;
+}
+
+.SAD_form_countryCode {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 25%;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    height: 40px;
+    padding: 0px 10px;
+    background-color: #fff;
+
+}
+.SAD_form_countryCode{
+    width: 35%;
+}
+
+.SAD_form_countryCode select {
+    width: 100%;
+    height: 80%;
+    margin-left: 10px;
+    outline-width: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+.SAD_form_button{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SAD_form_button button{
+    padding: 10px 15px;
+    background-color: #ffbb08;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 550px){
+    .SAD{
+        width: 100%;
+        height: 100%;
+        background-image: url("../../assets/logo.png");
+        background-repeat: no-repeat;
+        /* background-position: bottom left; */
+        background-size: 100px;
+        background-position-x: 15px;
+        background-position-y: 97%;
+    }
+    .SAD_form_input_row{
+        width: 90%;
+        margin-left: 0px;
+    }
+    .SAD_form_Ph_num {
+        display: flex;
+        width: 90%;
+        margin-left: 0px;
+    }
+    .SAD_form_inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

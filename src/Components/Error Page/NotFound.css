@@ -1,0 +1,28 @@
+.NotFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.NotFound img{
+    width: 500px;
+}
+.NotFound a{
+    text-decoration: none;
+    color: black;
+    /* font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 2rem;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400; */
+}
+.NotFound button{
+    border: none;
+    background-color: #ffbb28;
+    padding: 15px 17px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}

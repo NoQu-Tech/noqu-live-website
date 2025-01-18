@@ -1,0 +1,29 @@
+.PrivacyPolicy{
+    padding: 20px 50px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 15px;
+}
+.PrivacyPolicy h4{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.PrivacyPolicy p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+}
+.PrivacyPolicy h5{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+

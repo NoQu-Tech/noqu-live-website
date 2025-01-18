@@ -1,0 +1,120 @@
+.Contact_types-2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact_types-box1 img{
+    width: 75px;
+}
+.Contact_types-box1 h5{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+} 
+.Contact_types-box1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+} 
+.Contact_types-box1 {
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    justify-content: center;
+    width: 450px;
+    gap: 70px;
+    padding: 20px;
+    border-radius: 25px;
+} 
+.Contact_types-box1-container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.Contact_types-box2{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 25px;
+    background-color: #FAFAFA;
+    gap: 15px;
+    padding: 25px 50px;
+}
+.Contact_types-2 a{
+    text-decoration: none;
+    color: inherit;
+}
+.Contact_types-box2-div{
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+}
+.Contact_types-box2-div:hover{
+    background-color: #fff;
+    -webkit-box-shadow: 3px 3px 31px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 31px -13px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 31px -13px rgba(0,0,0,0.75);
+}
+.Contact_types-box2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 250px;
+    gap: 5px;
+
+}
+.Contact_types-box2-container h5{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.Contact_types-box2-container p{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #27375d;
+}
+.Contact_types-box2 img{
+    width: 50px;
+    height: 50px;
+    background-color: #ffbb08;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 780px){
+    .Contact_types-box1{
+        width: 50%;
+    }
+    .Contact_types-box2{
+        width: 50%;
+    }
+    .Contact_types-2{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px){
+    .Contact_types-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact_types-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact_types-box1 {
+        width: 95%;
+        gap: 50px;
+        padding: 20px;
+        border-radius: 25px;
+    }
+    .Contact_types-box2{
+        width: 95%;
+        gap: 50px;
+        padding: 25px 30px;
+    }
+}
+

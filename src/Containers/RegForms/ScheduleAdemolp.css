@@ -1,0 +1,110 @@
+#name-form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #fff;
+  height: 450px;
+  margin-bottom: 50px;
+}
+.from_head{
+  margin-bottom: 20px;
+}
+.schedule-a-demo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-form{
+  display: block;
+}
+
+#name-form2 label{
+  padding-right: 20px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+}
+
+.lp_input_row{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.lp_Ph_num{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+.lp_Ph_num input{
+  color: #5e5e5e;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline-width: 0;
+  border: 1px solid black;
+}
+
+.lp_CC{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;  
+}
+
+.lp_CC select{
+  width: 30% !important;
+  height: 40px;
+  outline-width: 0;
+  border-radius: 5px;
+  color: #5e5e5e;
+  padding: 0px 5px;
+}
+
+.lp_input_row input{
+  height: 40px;
+  color: #5e5e5e;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline-width: 0;
+}
+
+#name-form2 button {
+  padding: 13px 25px;
+  background-color: #27375d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 125px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  font-size: 15px;
+}
+
+.button{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.sm_links{
+display: flex;
+gap: 25px;
+margin-top: 30px;
+cursor: pointer;
+}
+
+@media screen and (max-width: 550px){
+#name-form2 {
+  margin-bottom: -50px;
+}
+}

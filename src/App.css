@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    bottom: 87px;
+    right: 20px;
+    z-index: 5;
+}
+
+.callicon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+}
+.callicon img{
+    width: 60px;
+}
+.icon_1{
+    -webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.icon_2{
+    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.icon_3{
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.icon_3:hover{
+    scale: 1.1;
+}
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(30px);
+              transform: translateX(30px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  
+.icons img{
+    width: 60px;
+}
+
+.routes{
+    margin-top: 70px ;
+}
+@media (max-width: 500px){
+    .NoQu{
+        display: none;
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        overflow-y: hidden;
+    }
+    .routes{
+        margin-top: 0px ;
+    }
+    .icons{
+        z-index: 5;
+    }
+    .callicon{
+        bottom: 10px;
+        right: 5px;
+    }
+    .callicon img{
+        width: 40px;
+    }
+} 
+
+
+

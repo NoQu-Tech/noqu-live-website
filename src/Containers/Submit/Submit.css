@@ -1,0 +1,46 @@
+.Submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.Submit-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+    border-radius: 50px;
+    padding: 70px 30px;
+}
+.Submit-container h1{
+    color: #ffbb08;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.Submit-container h2{
+    text-align: center;
+}
+.Submit-container button{
+    border: none;
+    background-color: #27375d;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 550px){
+    .Submit-container h1{
+        font-size: 20px;
+    }
+    .Submit-container h2{
+        font-size: 20px;
+    }
+    .Submit{
+        margin-top: 100px;
+    }
+}

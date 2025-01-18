@@ -1,0 +1,256 @@
+.CareerForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+  margin-top: 200px ;
+}
+.ContactForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px; 
+  margin-bottom: 20px;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    padding: 50px 50px;
+    width: 1000px;
+    border-radius: 50px;
+    
+  }
+  .reg-form-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .reg-form-head{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  .reg-form h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  .reg-form-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .CareerForm_row {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .CareerForm_row textarea{
+    border-radius: 25px !important;
+    height: 46px;
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    width: 550px;
+    height: 150px;
+  }
+  .reg-form label {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    font-family: "Poppins", sans-serif;
+  }
+  .reg-form label span{
+    color: #ff5269;
+  }
+  
+  .reg-form input, 
+  .Select{
+
+    border-radius: 25px !important;
+    height: 46px;
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    width: 550px;
+  }
+  .Select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Select select{
+    width: 500px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    padding-right: 20px;
+    outline-width: 0;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .Countrycode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .Countrycode input{
+    width: 434px;
+  }
+  .ph_input{
+    display: flex;
+  }
+  /* .Countrycode label{
+    padding-right: 80px;
+  } */
+
+  .CountryCode_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 46px;
+    border: 1px solid #cccccc;
+    font-size: 15px;
+    font-weight: 400;
+    color: #888;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    width: 120px !important;
+  }
+  .Country-code{
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    padding-right: 20px;
+    outline-width: 0;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .reg-form button {
+    padding: 10px;
+    background-color: #27375d;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 40px;
+    border-radius: 25px;
+  }
+  
+  .reg-form button:hover {
+    background-color: #45a049;
+  }
+  .reg-form h5{
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  .reg-form h2{
+    font-size: 50px;
+    font-weight: 650;
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+  }
+  .reg-form h3{
+    font-size: 25px;
+    font-weight: 650;
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+  }
+.contact-form-head{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 50px;
+}
+@media screen and (max-width: 550px){
+  .CareerForm_row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .reg-form input{
+    width: 100%;
+  }
+  .Select{
+    width: 100%;
+  }
+  .Select select{
+    width: 100%;
+  }
+  .Countrycode {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .CountryCode_box {
+    width: 30% !important;
+  }
+  .Country-code {
+    width: 80%;
+    padding-right: 0px;
+  }
+  .ph_input input{
+    width: 100%;
+  }
+  .reg-form h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .CareerForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin: 50px 0px;
+  }
+  .reg-form-head {
+    text-align: center;
+  }
+  .CareerForm_row textarea{
+    width: 100%;
+  }
+  .ContactForm{
+    margin-top: 70px;
+  }
+}
+
+
+

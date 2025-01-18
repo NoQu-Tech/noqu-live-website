@@ -1,0 +1,61 @@
+.LP_Submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LP_Submit-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+    border-radius: 50px;
+    padding: 70px 30px;
+}
+.LP_Submit-container p{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.LP_Submit-container h1 span{
+    color: #27375d;
+    font-size: 30px;
+}
+.LP_Submit-container h1{
+    color: #ffbb08;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.LP_Submit-container h2{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    color: #5e5e5e;
+}
+.LP_Submit-container button{
+    border: none;
+    background-color: #27375d;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 550px){
+    .LP_Submit-container h1{
+        font-size: 20px;
+    }
+    .LP_Submit-container h1 span{
+        font-size: 17px;
+    }
+    .LP_Submit-container h2{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .LP_Submit{
+        margin-top: 10px;
+    }
+}

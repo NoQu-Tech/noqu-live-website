@@ -1,0 +1,90 @@
+.TAM_cs_head img{
+    width: 50px !important;
+    height: 50px;
+}
+
+.TAM_cs{
+    width: 380px;
+    height: 400px;
+    border: 2px solid #EEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
+    border-radius: 0px 75px 0px 75px;
+    background-image: linear-gradient(white, #ededed);
+}
+.TAM_cs button{
+    width: 130px;
+    background-color: #27375d;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin-left: 220px;
+    margin-bottom: 10px;
+
+}
+.TAM_cs_head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    height: 50px;
+    width: 100%;
+}
+.TAM_cs_head h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+}
+.TAM_cs p{
+    font-size: 15px;
+    margin-bottom: 1rem;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 30px;
+    line-height: 30px;
+}
+@media screen and (max-width: 780px){
+    .TAM_cs{
+        width: 300px;
+        height: 350px;
+        padding: 20px 20px;
+    }
+    .TAM_cs button{
+        margin-left: 150px;
+    }
+    .TAM_cs_head{
+        height: 50px;
+    }
+    .TAM_cs p{
+        font-size: 13px;
+        margin-bottom: 0.5rem;
+        line-height: 25px;
+    }
+    .TAM_cs_head h4{
+        font-size: 16px;
+        font-weight: 500;
+        color: #27375d;
+        font-family: "Poppins", sans-serif;
+    }
+    .TAM_cs button{
+        width: 100px;
+        font-size: 12px;
+        padding: 7px 0px;
+    }
+}
+@media screen and (max-width: 780px){
+    .TAM_cs{
+        height: auto;
+    }
+}

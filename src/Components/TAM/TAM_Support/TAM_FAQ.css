@@ -1,0 +1,121 @@
+.TAM_FAQ-container{
+    width: 90%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(238, 238, 238);
+    align-items: center;
+}
+.TAM_FAQ-row{
+    width: 90%;
+}
+.TAM_FAQ_question_before{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #E1E1F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    padding-right: 20px;
+    font-family: "Poppins", sans-serif;
+    background-color: #f5fcff;
+    color: #5e5e5e;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* .TAM_FAQ_question_before:active{
+    background-color: #27375d;
+    color: #fff;
+} */
+.TAM_FAQ_question_after{
+    width: 100%;
+    border: 1px solid #E1E1F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    padding-right: 20px;
+    font-family: "Poppins", sans-serif;
+    background-color: #27375d;
+    color: #fff;
+    transition: all 0.5s;
+    height: 70px;
+}
+.TAM_FAQ_question_before p{
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 25px;
+}
+.TAM_FAQ_question_after p{
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 25px;
+}
+.TAM_FAQ_question_before h5{
+    font-size: 40px !important;
+    color: #5e5e5e !important;
+    font-weight: 200 !important;
+    transition: all 0.5s;
+    z-index: 2;
+
+}
+.TAM_FAQ_question_after h5{
+    font-size: 40px !important;
+    color: #fff !important;
+    font-weight: 200 !important;
+    transform: rotate(45deg) !important;   
+    transition: all 0.5s !important;
+    z-index: 2;
+}
+.TAM_FAQ_answer_after{
+    width: 100%;
+    border: 1px solid #E1E1F0;
+    padding: 20px 10px;
+    padding-right: 20px;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    transition: all 1s;
+}
+.TAM_FAQ_answer_before{
+    display: none;
+    transition: all 1s;
+}
+.TAM_FAQ_answer_after p{
+    font-size: 13px;
+    color: #5e5e5e;
+    font-weight: 400;
+    padding-left: 25px;
+    transition: all 1s;
+}
+.TAM_FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TAM_FAQ h1{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px){
+
+    .TAM_FAQ_question_before h5{
+        display: none;
+    
+    }
+    .TAM_FAQ_question_before{
+        height: auto;
+    }
+    .TAM_FAQ_question_after{
+        height: auto;
+
+    }
+    .TAM_FAQ_question_after h5{
+        display: none;
+    }
+
+}

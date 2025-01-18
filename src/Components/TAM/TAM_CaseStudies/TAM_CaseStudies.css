@@ -1,0 +1,67 @@
+.TAM_CaseStudies{
+    background:url( '../../../assets/TAM/TAM_bg.svg') no-repeat;
+    background-size:contain;
+}
+.TAM_CaseStudies_head{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TAM_CaseStudies_head img{
+    width: 80%;
+}
+.TAM_CaseStudies_head h1{
+    margin-bottom: 50px;
+}
+.TAM_CaseStudies_head h5{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-size: 16px;
+    margin-left: 70%;
+    margin-bottom: 10px;
+}
+.TAM_CaseStudies_container{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.TAM_CaseStudies_container a {
+    text-decoration: none;
+}
+@media screen and (max-width: 780px){
+    .TAM_CaseStudies_head{
+        padding-top: 20px;
+    }
+    .TAM_CaseStudies_head h5{
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 550px){
+    .TAM_CaseStudies_head img{
+        width: 400px;
+    }
+    .TAM_CaseStudies_head h5{
+        margin-left: 0px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .TAM_CaseStudies_head {
+        padding-top: 20px;
+    }
+    .TAM_CaseStudies_container{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 320px){
+    .TAM_CaseStudies_head h5{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,62 @@
+.News{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.News h1{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.News_button{
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    padding-right: 40px;
+    width: 100%;
+}
+.News-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.News button{
+    border: none;
+    background-color: #27375d;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    border-radius: 25px;
+    align-self: left;
+}
+@media screen and (max-width: 550px){
+    .News{
+        gap: 50px;
+    }
+    .News button{
+        margin-left: 0px !important;
+    }
+    .News h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 780px){
+    .News{
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .News button{
+        margin-left: 200px;
+    }
+    .News h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,103 @@
+.scroller {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 60s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+.box {
+    display: flex;
+    /* min-block-size: 100vh; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    font-size: 0.8rem;
+    background-color: var(--clr-primary-800);
+    width: 90% !important;
+    height: 320px;
+    background-color: #27375d;
+    -webkit-box-shadow: 3px 3px 31px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 31px -3px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 31px -3px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+.box h1{
+    text-align: center;
+    color: #fff;
+    /* margin-left: 50px; */
+}
+  
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+
+@media screen and (max-width: 550px){
+  .box {
+    display: flex;
+    /* min-block-size: 100vh; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    font-size: 1rem;
+    background-color: var(--clr-primary-800);
+    width: 100% !important;
+    height: 330px;
+    background-color: #27375d;
+    -webkit-box-shadow: 0px;
+    -moz-box-shadow: 0px;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+  .box h1{
+    margin-left: 0px;
+  }
+  .scroller {
+    padding-top: 0px;
+}
+}

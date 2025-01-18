@@ -1,0 +1,163 @@
+.AboutUs h1{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+    text-align: center;
+}
+
+.AboutUs_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.AboutUs_head p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.our_story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.our_story h1{
+    margin-bottom: 20px;
+}
+.our_story p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 2rem;
+    color: #5e5e5e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.AboutUs_md_profile_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AboutUs_md_profile h1{
+    font-size: 50px;
+}
+.AboutUs_md_profile-img img{
+    width: 280px !important;
+    height: 370px;
+    scale: 1;
+    transition: all 1s;  
+}
+.AboutUs_md_profile_box img:hover{
+    scale: 1.2;
+}
+.AboutUs_head img{
+    width: 85%;
+    height: 85%;
+}
+.AboutUs_md_profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.AboutUs_md_profile-img{
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.6);
+
+}
+.AboutUs_md_profile-1,
+.AboutUs_md_profile-2{
+    width: 300px;
+    height: 420px;
+    margin: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.md_name{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 2px 2px 12px -2px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 2px 12px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 2px 12px -2px rgba(0,0,0,0.6);
+    border-radius: 5px;
+    position: relative;
+    background-color: #fff;
+    top: -50px;
+
+}
+.md_name p{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #999aab;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    justify-content: center;
+}
+.md_name h4{
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #070120;
+    justify-content: center;
+}
+@media screen and (max-width: 550px){
+    .AboutUs{
+        margin-top: 80px;
+    }
+    .AboutUs_head{
+        margin-top: 50px;
+    }
+    .AboutUs h1{
+        font-size: 3rem;
+    }
+    .AboutUs p{
+        font-size: 1.3rem;
+    }
+    .AboutUs_md_profile h1 {
+        font-size: 43px;
+        margin-bottom: 20px;
+    }
+    .AboutUs_md_profile_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .AboutUs_md_profile-1, .AboutUs_md_profile-2 {
+        margin: 25px 10px;
+    }
+    
+    .AboutUs_md_profile {
+        margin-top: 50px;
+}
+}

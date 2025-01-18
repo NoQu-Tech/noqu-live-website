@@ -1,0 +1,110 @@
+.TAM_Support{
+    background:url('../../../assets/TAM/TAM_bg.svg') no-repeat;
+    background-size:cover;
+}
+.TAM_Support_head h5{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-size: 16px;
+    text-align: center;
+
+}
+.TAM_Support_head h1{
+    margin-bottom: 50px;
+}
+.TAM_Support_head-h5{
+    margin-left: 70%;
+    margin-bottom: 10px;
+}
+.TAM_Support_head{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.TAM_Support_head_box img{
+    width: 75px;
+}
+.TAM_Support_head_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 35px;
+    height: 150px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.TAM_Support_head_box:hover{
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+.TAM_Support_head_box h5{
+    color: #27375d;
+    font-family: "Poppins", sans-serif;
+    font-weight: 650;
+    font-size: 16px;
+}
+.TAM_Support_head-container{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 100px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.TAM_Support_content{
+    width: 100%;
+}
+@media screen and (max-width: 2000px){
+    .TAM_Support{
+        background-size:contain;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .TAM_Support_head_box h5{
+        font-weight: 650;
+        font-size: 14px;
+    }
+    .TAM_Support_head_box img{
+        width: 30px;
+    }
+    .TAM_Support_head_box{
+        height: 100px;
+    }
+    .TAM_Support_head h5{
+        margin-left: 0%;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .TAM_Support_head-h5{
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width: 550px){
+    .TAM_Support_head-container{
+        flex-direction: column;
+    }
+    .TAM_Support_head-container{
+        height: 350px;
+    }
+    .TAM_Support_head_box{
+        border: 1px solid ;
+        border: 1px solid rgb(226, 225, 225);
+        width: 100%;
+    }
+    .TAM_Support_head_box:hover{
+        margin-bottom: 0px;
+        transition: all 1s;
+    }
+    .TAM_Support_head-h5{
+        margin-left: 0px;
+    }
+}
