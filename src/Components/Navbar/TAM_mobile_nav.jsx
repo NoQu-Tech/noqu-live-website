@@ -31,12 +31,12 @@ const TAM_mobile_nav = () => {
           </div>
           <div className='navbar-menu_container-links'>
           <ul>
-          <Link to="/Home" onClick={() =>  setToggleMenu(false)}><li>
+          <Link to="/home" onClick={() =>  setToggleMenu(false)}><li>
                       <div className="Navbar_menu_items">
                           <p>NoQu Home</p>
                       </div>
                   </li></Link>
-                  <Link to="/TAM_home_page" onClick={() =>  setToggleMenu(false)}><li className='Navbar_menu_product'>
+                  <Link to="/tam-time-and-attendance-management" onClick={() =>  setToggleMenu(false)}><li className='Navbar_menu_product'>
                       <div className="Navbar_menu_items">
                           <p>Attendance Management</p>
                       </div>
@@ -46,12 +46,12 @@ const TAM_mobile_nav = () => {
                             <p>Pricing</p>
                         </div>
                   </li></Link>
-                  <Link to="/TAM_CaseStudies" onClick={() =>  setToggleMenu(false)}><li>
+                  <Link to="/tam-casestudies" onClick={() =>  setToggleMenu(false)}><li>
                       <div className="Navbar_menu_items">
                             <p>Case Studies</p>
                       </div>
                   </li></Link>
-                  <Link to="/TAM_Support" onClick={() =>  setToggleMenu(false)}><li>
+                  <Link to="/tam-support" onClick={() =>  setToggleMenu(false)}><li>
                       <div className="Navbar_menu_items">
                             <p>Support</p>
                       </div>

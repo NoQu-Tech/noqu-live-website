@@ -24,7 +24,7 @@ const Navbar_mobile = () => {
                     </div>
                     <div className='navbar-menu_container-links'>
                     <ul>
-                    <Link to="/Home" onClick={() =>  setToggleMenu(false)}><li>
+                    <Link to="/home" onClick={() =>  setToggleMenu(false)}><li>
                                 <div className="Navbar_menu_items">
                                     <p>Home</p>
                                 </div>
@@ -40,7 +40,7 @@ const Navbar_mobile = () => {
                                         <li>
                                         <p><span>|</span> NoQu Office</p>
                                             <ul className="Navbar_menu_product_dropdown">
-                                            <Link to="/TAM_home_page" onClick={() =>  setToggleMenu(false)}><li><span><p>|</p></span><p>TAM(Time And Attendence Management)</p></li></Link>
+                                            <Link to="/tam-time-and-attendance-management" onClick={() =>  setToggleMenu(false)}><li><span><p>|</p></span><p>TAM(Time And Attendence Management)</p></li></Link>
                                             {/* <Link to="/scan-homepage" onClick={() =>  setToggleMenu(false)}><li><span><p>|</p></span><p>NoQu Scan</p></li></Link> */}
                                             </ul>
                                         </li>
@@ -53,10 +53,10 @@ const Navbar_mobile = () => {
                                           <p>Company</p>
                                       </div><ul className="Navbar_menu_company_dropdown" style={{ display: companydd ? 'block' : 'none' }}>
                                               <Link to="/about-us" onClick={() => setToggleMenu(false)}><li><span>|</span>AboutUs</li></Link>
-                                              <Link to="/News" onClick={() => setToggleMenu(false)}><li><span>|</span>News</li></Link>
-                                              <Link to="/Awards" onClick={() => setToggleMenu(false)}><li><span>|</span>Awards</li></Link>
-                                              <Link to="/Career" onClick={() => setToggleMenu(false)}><li><span>|</span>Career</li></Link>
-                                              <Link to="/Contact" onClick={() => setToggleMenu(false)}> <li><span>|</span>Contact</li></Link>
+                                              <Link to="/news" onClick={() => setToggleMenu(false)}><li><span>|</span>News</li></Link>
+                                              <Link to="/awards" onClick={() => setToggleMenu(false)}><li><span>|</span>Awards</li></Link>
+                                              <Link to="/career" onClick={() => setToggleMenu(false)}><li><span>|</span>Career</li></Link>
+                                              <Link to="/contact" onClick={() => setToggleMenu(false)}> <li><span>|</span>Contact</li></Link>
                                           </ul>
                             </li>
                             {/* <Link to="/affiliate-marketing" onClick={() =>  setToggleMenu(false)}><li>

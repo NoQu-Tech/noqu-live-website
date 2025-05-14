@@ -10,6 +10,7 @@ import profile3 from '../../assets/profile3.png'
 import Dateimg from '../../assets/date.png'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
 
 const TAM_form = ({ isOpen, onClose }) => {
 	if (!isOpen) return null;
@@ -17,7 +18,7 @@ const TAM_form = ({ isOpen, onClose }) => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const [productName, setProductName] = useState('');
+	const [productName, setProductName] = useState('Time And Attendance Management');
 	const [fullName, setFullName] = useState('');
 	const [email, setEmail] = useState('');
 	const [organizationName, setOrganizationName] = useState('');
@@ -62,6 +63,19 @@ const TAM_form = ({ isOpen, onClose }) => {
 
 	return (
 		<>
+			<Helmet>
+					<title>NoQu: Time and Attendance Management (TAM) Form</title>
+					<meta name="description" content="Access the NoQu Time and Attendance Management (TAM) form to streamline employee tracking, improve efficiency, and manage attendance with ease." />
+					<meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+					<meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+					<meta property="og:image" content="https://noqu.in/logo.png" />
+					<meta property="og:url" content="https://noqu.in/" />
+					<meta name="twitter:card" content="NoQu" />
+					<meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+					<meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+					<meta name="twitter:image" content="https://noqu.in/logo.png" />
+				</Helmet>
+
 			<div className="SAD_Overlay">
 				<div className='SAD'>
 					<form onSubmit={handleSubmit} className="SAD_form">
@@ -348,7 +362,7 @@ const TAM_form = ({ isOpen, onClose }) => {
 									required
 								/>
 							</div>
-							<div className='SAD_form_input_row'>
+							{/* <div className='SAD_form_input_row'>
 								<label><img src={list} alt="" /></label>
 								<select
 									name="productName"
@@ -357,9 +371,8 @@ const TAM_form = ({ isOpen, onClose }) => {
 									required>
 									<option value="">Choose Product</option>
 									<option value="Time And Attendance Management">Time And Attendance Management</option>
-									{/* <option value="Noqu Scan">Noqu Scan</option> */}
 								</select>
-							</div>
+							</div> */}
 							<div className='SAD_form_input_row'>
 								<label><img src={meeting} alt="" /></label>
 								<select name="typeOfCall"

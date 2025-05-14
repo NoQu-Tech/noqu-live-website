@@ -133,61 +133,7 @@
   font-weight: 500;
   font-size: 20px;
 }
-/* ---------------------------------------------------mobile------------------------------------- */
-.admin_menu_mobile{
-  width: 20%;
-  height: 100vh ;
-  background-color: #27375d;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  padding: 20px 0px;
-  position: fixed;
-}
-.admin_menu_mobile ul{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 40px 40px;
-}
-.admin_menu_mobile ul li{
-  font-size: 15px;
-  padding: 0px 15px;
-  margin: 15px 0px;
-  cursor: pointer;
-  border-left: 2px solid #ffbb08;
-}
-.admin_menu_mobile_head-img{
-  border: 2px solid gainsboro;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  overflow: hidden;
-  padding: 10px;
-  background-color: #fff;
-}
-.admin_menu_mobile_head-img img{
-  width: 100%;
-  height: 100%;
-}
-.admin_menu_mobile_head{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.admin_menu_mobile_head h5{
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-}
-.admin_mobile_menu_control{
-  display: none;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+
 .AdminLogin{
   width: 100%;
   display: flex;
@@ -246,6 +192,63 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+
+/* ---------------------------------------------------mobile------------------------------------- */
+.admin_menu_mobile{
+  width: 20%;
+  height: 100vh ;
+  background-color: #27375d;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 0px;
+  position: fixed;
+}
+.admin_menu_mobile ul{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px 40px;
+}
+.admin_menu_mobile ul li{
+  font-size: 15px;
+  padding: 0px 15px;
+  margin: 15px 0px;
+  cursor: pointer;
+  border-left: 2px solid #ffbb08;
+}
+.admin_menu_mobile_head-img{
+  border: 2px solid gainsboro;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+}
+.admin_menu_mobile_head-img img{
+  width: 100%;
+  height: 100%;
+}
+.admin_menu_mobile_head{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.admin_menu_mobile_head h5{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.admin_mobile_menu_control{
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 @media screen and (max-width: 780px){
   .admin_mobile_menu_control{

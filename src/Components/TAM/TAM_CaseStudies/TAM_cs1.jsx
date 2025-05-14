@@ -2,16 +2,32 @@ import React, { useEffect } from 'react'
 import './TAM_cs.css'
 import caseStudy1 from '../../../assets/TAM/caseStudy1.jpeg'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 const TAM_cs1 = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
     const handleClick = () => {
-        const pdfUrl = 'src/assets/cs1.pdf';
+        const pdfUrl = 'assets/cs1.pdf';
         const mimeType = 'application/pdf';
         window.open(pdfUrl, '_newtab', `mime=${mimeType}`);
     };
   return (
+    <>
+
+    <Helmet>
+            <title>"Healthcare Case Studies: Time & Attendance Tracking with NoQu"</title>
+            <meta name="description" content="NoQu’s Time and Attendance Tracking and Geofencing Systems are transforming the healthcare industry. Our solutions optimize staff management, reduce wait times, and boost efficiency. Discover our impact in healthcare case studies!" />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='TAM_cases'>
         <div className="TAM_cases-img">
             <img src={caseStudy1} alt="" />
@@ -36,11 +52,12 @@ API Integration streamlined data flow, and workflow integration prevented disrup
                 <li>• Access control and permissions for data security.</li>
             </ul>
             <div className="TAM_cases-content-buttons">
-                <Link to="/TAM_CaseStudies"><button>back</button></Link>
+                <Link to="/tam-casestudies"><button>back</button></Link>
                 <button onClick={handleClick}>download</button>
             </div>
         </div>
     </div>
+    </>
   )
 }
    

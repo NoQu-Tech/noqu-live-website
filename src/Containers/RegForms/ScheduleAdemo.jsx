@@ -10,6 +10,7 @@ import profile3 from '../../assets/profile3.png'
 import Dateimg from '../../assets/date.png'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
 
 const ScheduleAdemo = ({ isOpen, onClose }) => {
 	if (!isOpen) return null;
@@ -67,6 +68,19 @@ const ScheduleAdemo = ({ isOpen, onClose }) => {
 
 	return (
 		<>
+			<Helmet>
+					<title>NoQu Sales & Support: Streamline Operations with Innovative Solutions</title>
+					<meta name="description" content="NoQu’s sales and support team is here to help transform your business with our innovative queue management and attendance systems. Contact us for personalized solutions to boost efficiency and save time." />
+					<meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+					<meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+					<meta property="og:image" content="https://noqu.in/logo.png" />
+					<meta property="og:url" content="https://noqu.in/" />
+					<meta name="twitter:card" content="NoQu" />
+					<meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+					<meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+					<meta name="twitter:image" content="https://noqu.in/logo.png" />
+				</Helmet>
+
 			<div className="SAD_Overlay">
 				<div className='SAD'>
 					<form onSubmit={handleSubmit} className="SAD_form">

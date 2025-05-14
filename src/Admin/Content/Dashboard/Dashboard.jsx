@@ -17,30 +17,40 @@ const Dashboard = ({ subdata, unsubdata, subscriptionToday, unsubscriptionToday 
     try {
       // const subResponse = await axios.post('http://localhost:3003/db/data');
       // const unsubResponse = await axios.post('http://localhost:3003/db/Unsubdata');
-
+      
       const subResponse = await axios.post('https://noqu.in/db/data');
       const unsubResponse = await axios.post('https://noqu.in/db/Unsubdata');
 
       const subData = subResponse.data.message;
       const unsubData = unsubResponse.data.message;
-
+      
       setSubscribers(subData);
       setUnsubscribers(unsubData);
-
+      
       // Calculate today's subscribers and unsubscribers
       const today = new Date().toISOString().split('T')[0];
       const todaySub = subData.filter((item) => item.created_at.startsWith(today));
       const todayUnsub = unsubData.filter((item) => item.deleted_at.startsWith(today));
-
+      
       setTodaySubscribers(todaySub.length);
       setTodayUnsubscribers(todayUnsub.length);
-
+      
       updateCharts(subData, unsubData);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
+  
 
+  // Set up auto-refresh with useEffect
+  useEffect(() => {
+    fetchData(); // Initial fetch
+    const interval = setInterval(fetchData, 10000); // Refresh every 10 seconds
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
+
+  
   // Update charts based on data
   const updateCharts = (subData, unsubData) => {
     const getLastThreeDates = () => {
@@ -95,12 +105,6 @@ const Dashboard = ({ subdata, unsubdata, subscriptionToday, unsubscriptionToday 
     });
   };
 
-  // Set up auto-refresh with useEffect
-  useEffect(() => {
-    fetchData(); // Initial fetch
-    const interval = setInterval(fetchData, 10000); // Refresh every 10 seconds
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
 
   return (
     <div className="Dashboard">

@@ -119,7 +119,7 @@ function Subscribers({ data, loading, errormessage, fetchData, count, subscripti
         console.log(_response.data.message)
       })
       .catch((error) => {
-        console.error(error);
+        console.error(error);     
       });
   };
 

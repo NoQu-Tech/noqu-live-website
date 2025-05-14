@@ -8,6 +8,7 @@ import youtube from '../../assets/youtube.png';
 import linkedin from '../../assets/linkedin.png';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import ScheduleAdemo from '../../Containers/RegForms/ScheduleAdemo';
 
 const Footer = () => {
 
@@ -99,11 +100,22 @@ const Footer = () => {
     }
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+
   return (
     <div className='Footer'>
         <div className="Footer-container">
             <div className="Footer_logo fadeOut">
-                <Link to="/Home"><img src={logo} alt="" /></Link>
+                <Link to="/home"><img src={logo} alt="" /></Link>
                   
             </div>
             <div className="Footer_box">
@@ -111,26 +123,26 @@ const Footer = () => {
                   <h5>Company</h5>
                   <ul>
                       <li><Link to="/about-us"><p>About</p></Link></li>
-                      <li><Link to="/Career"><p>Careers</p></Link></li>
-                      <li><Link to="/News"><p>News</p></Link></li>
-                      <li><Link to="/Blog"><p>Blog</p></Link></li>
-                      <li><Link to="/Awards"><p>Awards</p></Link></li>
-                      <li><Link to="/Contact"><p>Contact</p></Link></li>
+                      <li><Link to="/career"><p>Careers</p></Link></li>
+                      <li><Link to="/news"><p>News</p></Link></li>
+                      <li><Link to="/blog"><p>Blog</p></Link></li>
+                      <li><Link to="/awards"><p>Awards</p></Link></li>
+                      <li><Link to="/contact"><p>Contact</p></Link></li>
                   </ul>
                 </div>
                 <div className="Footer_column fadeOut">
                       <h5>Product</h5>
                       <p>NoQu Office</p>
                       <ul className='Footer_column_products'>
-                        <li><div className='Footer_dot'>•</div><Link to="/TAM_home_page"><h6>Time And Attendance Management (TAM)</h6></Link></li>
+                        <li><div className='Footer_dot'>•</div><Link to="/tam-time-and-attendance-management"><h6>Time And Attendance Management (TAM)</h6></Link></li>
                         {/* <li><div className='Footer_dot'>•</div><Link to="/scan-homepage"><h6>NoQu Scan</h6></Link></li> */}
                       </ul>
                 </div>
                 <div className="Footer_column fadeOut">
                   <h5>Sales & Support</h5>
                   <ul>
-                    <li><Link to="/schedule-a-demo"><p>Shedule A Demo</p></Link></li>
-                    <li><Link to="/TAM_Support"><p>Support</p></Link></li>
+                    <li><Link to="/schedule-a-demo"><p>Schedule A Demo</p></Link></li>
+                    <li><Link to="/tam-support"><p>Support</p></Link></li>
                   </ul>
                 </div>
                 <div className="Footer_column fadeOut">
@@ -165,18 +177,19 @@ const Footer = () => {
                         <li><Link to="https://x.com/noqutech?t=UuSXs6NwxyH7TYjAWwa3TQ&s=08"><img className='scale-hover' src={twitter} alt="" /></Link></li>
                         <li><Link to="https://www.instagram.com/noqu.official?igsh=bXk5ZGp5cHZ5enlj"><img className='scale-hover' src={instagram} alt="" /></Link></li>
                         <li><Link to="https://www.youtube.com/@NoquTechSolutions"><img className='scale-hover' src={youtube} alt="" /></Link></li>
-                        <li><Link to="https://linkedin.com/company/noqu-tech-solutions-pvt-ltd/"><img className='scale-hover' src={linkedin} alt="" /></Link></li>
+                        <li><Link to="https://www.linkedin.com/company/noqutechsolutions/posts/?feedView=all"><img className='scale-hover' src={linkedin} alt="" /></Link></li>
                     </div>
                 </div>
             </div>
         </div>
         <div className="Footer_copyrights fadeOut">
-            <Link to="/Home"><p><span>© NoQu</span></p></Link>
+            <Link to="/home"><p><span>© NoQu</span></p></Link>
             <p>. All rights reserved.</p>
             <a href="/privacy-policy" target='blank'><p>Privacy Policy </p></a>
             <p>|</p>
             <a href="/terms-and-conditions" target='blank'><p>Terms & Conditions</p></a>
         </div>
+        < ScheduleAdemo isOpen={isModalOpen} onClose={closeModal} />
     </div>
   )
 }

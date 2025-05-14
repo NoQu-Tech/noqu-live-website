@@ -6,6 +6,7 @@ import blog3 from '../../assets/blog3.jpeg'
 import blog4 from '../../assets/blog4.jpeg'
 import blog5 from '../../assets/blog5.jpeg'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const Blogs = ({img,heading,para,path}) => {
 
@@ -38,6 +39,20 @@ const Blog = () => {
     ]
 
   return (
+    <>
+    <Helmet>
+            <title>NoQu Blog: Insights on Innovation, Technology & Time Management</title>
+            <meta name="description" content="Explore NoQu's blog for the latest insights on innovative tech, time management solutions, and industry trends. Stay updated on how we’re reshaping the future of efficiency." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='blog_homepage'>
         <div className="blog_homepage_head">
             <h5 className='TAM_h1'>Time and Attendance Management (TAM)</h5>
@@ -50,6 +65,7 @@ const Blog = () => {
             {datas.map((data) => < Blogs key={data.id} img = {data.img} heading = {data.heading} para = {data.para} path = {data.path}/>)}
         </div>
     </div>
+    </>
   )
 }
 

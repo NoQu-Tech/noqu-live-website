@@ -15,14 +15,41 @@ import ReactPlayer from 'react-player';
 import TAM_English1 from "../../assets/TAM/TAM_English1.mp4";
 import Counter from '../../Containers/CounterUp';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import ScheduleAdemo from '../../Containers/RegForms/ScheduleAdemo';
 
 
 const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
+
+
+      const [isModalOpen, setIsModalOpen] = useState(false);
+
+      const openModal = () => {
+        setIsModalOpen(true);
+      };
+    
+      const closeModal = () => {
+        setIsModalOpen(false);
+      };
       
   return (
+    <>
+    <Helmet>
+        <title>NoQu: Revolutionizing Workforce Management with Payroll & Attendance Software
+        </title>
+        <meta name="description" content="NoQu combines innovative time and attendance tracking with cutting-edge HR payroll software, boosting efficiency, saving time, and eliminating inefficiencies, so businesses can focus on what truly matters." />
+        <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+        <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+        <meta property="og:image" content="https://noqu.in/logo.png" />
+        <meta property="og:url" content="https://noqu.in/" />
+        <meta name="twitter:card" content="NoQu" />
+        <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+        <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+        <meta name="twitter:image" content="https://noqu.in/logo.png" />
+    </Helmet>
     <div className='Homepage'>
         < Hero />
         <Services/>
@@ -31,15 +58,15 @@ const Home = () => {
             {/* <p>Partnering with NoQu can assuredly enhance your customer service multi-fold.</p> */}
             <div className="Homepage_Clients_Counts">
                  <div className="Homepage_Clients_Counts-box">
-                      <h1><Counter targetNumber={400} counting={1} />+</h1>
+                      <h1><Counter targetNumber={1000} />+</h1>
                       <p>Clients</p>
                  </div>
                  <div className="Homepage_Clients_Counts-box">
-                      <h1><Counter targetNumber={10000} counting={10}/>+</h1>
+                      <h1><Counter targetNumber={20000} />+</h1>
                       <p>Users</p>
                  </div>
                  <div className="Homepage_Clients_Counts-box">
-                      <h1><Counter targetNumber={12} counting={1}/>+</h1>
+                      <h1><Counter targetNumber={12} />+</h1>
                       <p>Countries</p>
                  </div>
             </div>
@@ -128,13 +155,15 @@ const Home = () => {
                          <h1 className='TAM_h1'>Experience is worth
                          more than words</h1>
                          <p>We would like to have a demo. Book a slot now for a personalized walkthrough of our products</p>
-                         <Link to="/schedule-a-demo"><button>Schedule a Demo / Call</button></Link>
+                         <button onClick={() => openModal()}>Schedule a Demo / Call</button>
                     </div>
                     <div className="Homepage_demobox-img2">
                         <img src={demobox2} alt=""/>
                     </div>  
             </div>
+            < ScheduleAdemo isOpen={isModalOpen} onClose={closeModal} />
     </div>
+    </>
   )
 }
 

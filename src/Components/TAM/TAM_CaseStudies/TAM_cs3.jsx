@@ -2,16 +2,31 @@ import React, { useEffect } from 'react'
 import './TAM_cs.css'
 import caseStudy3 from '../../../assets/TAM/caseStudy3.jpeg'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 const TAM_cs3 = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
       const handleClick = () => {
-        const pdfUrl = 'src/assets/cs3.pdf';
+        const pdfUrl = 'assets/cs3.pdf';
         const mimeType = 'application/pdf';
         window.open(pdfUrl, '_newtab', `mime=${mimeType}`);
     };
   return (
+    <>
+    <Helmet>
+            <title>"Revolutionizing Supply Chain & Logistics with Employee Tracking Tech"</title>
+            <meta name="description" content="NoQu is transforming supply chain and logistics with employee live tracking software and geofencing attendance system, optimizing operations, eliminating delays, and improving efficiency."/>
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='TAM_cases'>
         <div className="TAM_cases-img">
             <img src={caseStudy3} alt="" />
@@ -37,11 +52,12 @@ NoQu TAM's real-time visibility across the logistics network enabled better coor
                 <li>• Detailed reports and dashboards for actionable insights.</li>
             </ul>
             <div className="TAM_cases-content-buttons">
-                <Link to="/TAM_CaseStudies"><button>back</button></Link>
+                <Link to="/tam-casestudies"><button>back</button></Link>
                 <button onClick={handleClick}>download</button>
             </div>
         </div>
     </div>
+    </>
   )
 }
 

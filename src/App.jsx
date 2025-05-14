@@ -77,18 +77,18 @@ function App() {
     }
   }, [location.pathname]);
   useEffect(() => {
-    if (location.pathname === '/TAM_home_page'
-      || location.pathname === '/TAM_Support'
-      || location.pathname === '/TAM_CaseStudies'
+    if (location.pathname === '/tam'
+      || location.pathname === '/tam-support'
+      || location.pathname === '/tam-casestudies'
       || location.pathname === '/tam-pricing'
-      || location.pathname === '/TAM_cs1'
-      || location.pathname === '/TAM_cs2'
-      || location.pathname === '/TAM_cs3'
-      || location.pathname === '/TAM_cs4'
-      || location.pathname === '/TAM_cs5'
-      || location.pathname === '/TAM_cs6'
-      || location.pathname === '/TAM_cs7'
-      || location.pathname === '/TAM_form'
+      || location.pathname === '/health-care-industry'
+      || location.pathname === '/financial-institutions'
+      || location.pathname === '/supply-chain-and-logistics-industry'
+      || location.pathname === '/construction-industry'
+      || location.pathname === '/manpower-and-staffing-industry'
+      || location.pathname === '/retail-chain'
+      || location.pathname === '/manufacturing-industry'
+      || location.pathname === '/tam-form-demo'
     ) {
       setNavbar(<TAM_Navbar />);
     } else if (
@@ -159,30 +159,30 @@ function App() {
         }
         <Routes>
           <Route index element={<Home />}></Route>
-          <Route path='/Home' element={<Home />}></Route>
+          <Route path='/home' element={<Home />}></Route>
           <Route path='/channel-partner' element={<ChannelPartner />}></Route>
           <Route path='/channel-partner-form' element={<ChannelPartnerForm />}></Route>
           <Route path='/about-us' element={<AboutUs />}></Route>
-          <Route path='/Awards' element={<Awards />}></Route>
-          <Route path='/Award1' element={<Award1 />}></Route>
-          <Route path='/Award2' element={<Award2 />}></Route>
-          <Route path='/Award3' element={<Award3 />}></Route>
-          <Route path='/Career' element={<Career />}></Route>
-          <Route path='/Contact' element={<Contact />}></Route>
-          <Route path='/News' element={<News />}></Route>
+          <Route path='/awards' element={<Awards />}></Route>
+          <Route path='/iso-ceritificate' element={<Award1 />}></Route>
+          <Route path='/startuptn' element={<Award2 />}></Route>
+          <Route path='/dpiit' element={<Award3 />}></Route>
+          <Route path='/career' element={<Career />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/news' element={<News />}></Route>
           <Route path='/career-form' element={<CareerForm />}></Route>
-          <Route path='/TAM_home_page' element={<TAM_home_page />}></Route>
+          <Route path='/tam-time-and-attendance-management' element={<TAM_home_page />}></Route>
           <Route path='/tam-pricing' element={<TamPricing />}></Route>
-          <Route path='/TAM_CaseStudies' element={<TAM_CaseStudies />}></Route>
-          <Route path='/TAM_Support' element={<TAM_Support />}></Route>
-          <Route path='/TAM_cs1' element={<TAM_cs1 />}></Route>
-          <Route path='/TAM_cs2' element={<TAM_cs2 />}></Route>
-          <Route path='/TAM_cs3' element={<TAM_cs3 />}></Route>
-          <Route path='/TAM_cs4' element={<TAM_cs4 />}></Route>
-          <Route path='/TAM_cs5' element={<TAM_cs5 />}></Route>
-          <Route path='/TAM_cs6' element={<TAM_cs6 />}></Route>
-          <Route path='/TAM_cs7' element={<TAM_cs7 />}></Route>
-          <Route path='/Submit' element={<Submit />}></Route>
+          <Route path='/tam-casestudies' element={<TAM_CaseStudies />}></Route>
+          <Route path='/tam-support' element={<TAM_Support />}></Route>
+          <Route path='/health-care-industry' element={<TAM_cs1 />}></Route>
+          <Route path='/financial-institutions' element={<TAM_cs2 />}></Route>
+          <Route path='/supply-chain-and-logistics-industry' element={<TAM_cs3 />}></Route>
+          <Route path='/construction-industry' element={<TAM_cs4 />}></Route>
+          <Route path='/manpower-and-staffing-industry' element={<TAM_cs5 />}></Route>
+          <Route path='/retail-chain' element={<TAM_cs6 />}></Route>
+          <Route path='/manufacturing-industry' element={<TAM_cs7 />}></Route>
+          <Route path='/submit' element={<Submit />}></Route>
           <Route path='/submit-fail' element={<SubmitFail />}></Route>
           <Route path='/schedule-a-demo' element={<ScheduleAdemo />}></Route>
           <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
@@ -190,23 +190,23 @@ function App() {
           <Route path='/lp' element={<Lp />}></Route>
           <Route path='/lp2' element={<Lp2 />}></Route>
           <Route path='/lp3' element={<Lp3 />}></Route>
-          <Route path='/Blog' element={<Blog />}></Route>
-          <Route path='/Blog1' element={<Blog1 />}></Route>
-          <Route path='/Blog2' element={<Blog2 />}></Route>
-          <Route path='/Blog3' element={<Blog3 />}></Route>
-          <Route path='/Blog4' element={<Blog4 />}></Route>
-          <Route path='/Blog5' element={<Blog5 />}></Route>
+          <Route path='/blog' element={<Blog />}></Route>
+          <Route path='/blog1' element={<Blog1 />}></Route>
+          <Route path='/blog2' element={<Blog2 />}></Route>
+          <Route path='/blog3' element={<Blog3 />}></Route>
+          <Route path='/blog4' element={<Blog4 />}></Route>
+          <Route path='/blog5' element={<Blog5 />}></Route>
           <Route path='/Admin' element={<Admin />}></Route>
-          <Route path='/TAM_form' element={< TAM_form />}></Route>
+          <Route path='/tam-form' element={< TAM_form />}></Route>
           <Route path='/schedule-a-demo-lp' element={< ScheduleAdemolp />}></Route>
-          <Route path='/Unsub_popup' element={< Unsub_popup />}></Route>
-          <Route path='/LP_Submit' element={< LP_Submit />}></Route>
+          <Route path='/unsub-popup' element={< Unsub_popup />}></Route>
+          <Route path='/lp-submit' element={< LP_Submit />}></Route>
           <Route path="/news/:slug" element={<NewsDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       {footer}
-    </>
+    </> 
   )
 }
 

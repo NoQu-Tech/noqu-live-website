@@ -12,8 +12,8 @@ import { RiMenu3Line } from 'react-icons/ri';
 import UnSubscribers from './Content/UnSubscribers/UnSubscribers';
 import Compose from './Content/Compose/Compose';
 import Dashboard from './Content/Dashboard/Dashboard';
-import Blog from './Content/Blog/Blog';
-import CMS_News from './Content/CMS_News/CMS_News';
+import CMS_News from './Content/CMS/News_CMS/CMS_News';
+
 
 const Admin = () => {
       const [PassWord, setPassWord] = useState('')
@@ -168,7 +168,6 @@ const Admin = () => {
                               unsubscriptionToday={unsubscriptionToday}
                               setUnSubscriptionToday={setUnSubscriptionToday}
                         />}
-                        {activeComponent === 'Blog' && <Blog />}
                         {activeComponent === 'News' && <CMS_News />}
                   </div>
             </div>

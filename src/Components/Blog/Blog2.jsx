@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import "./BlogPage.css"
 import BlogPage2 from '../../assets/BlogPage2.png'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const Blog2 = () => {
 
@@ -10,6 +11,20 @@ const Blog2 = () => {
   }, []);
 
   return (
+    <>
+    <Helmet>
+            <title>Time and Attendance Management with Zero Capital Investment</title>
+            <meta name="description" content="Explore how Time and Attendance Management systems can save costs with zero capital investment. Learn how cloud-based solutions improve efficiency without upfront expenses." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='blog1'>
     <h1 className='TAM_h1'>Time and Attendance Management’s Zero Capital Investment</h1>
     <img src={BlogPage2} alt="" />
@@ -26,6 +41,7 @@ const Blog2 = () => {
 
     <Link to = "/Blog"><button>back</button></Link> 
     </div>
+    </>
   )
 }
 

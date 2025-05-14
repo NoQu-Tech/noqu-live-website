@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './RegForm.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const ChannelPartnerForm = () => {
 	useEffect(() => {
@@ -11,7 +12,8 @@ const ChannelPartnerForm = () => {
 	const [fullName, setFullName] = useState('');
 	const [email, setEmail] = useState('');
 	const [phoneNo, setPhoneNo] = useState('');
-	const [countryCode, setCountryCode] = useState('');
+	const [countryCode, setCountryCode] = useState('+91');
+	const [building, setBuilding] = useState('');
 	const [city, setCity] = useState('');
 	const [stateProvince, setStateProvince] = useState('');
 	const [country, setCountry] = useState('');
@@ -34,6 +36,7 @@ const ChannelPartnerForm = () => {
 		countryCode,
 		phoneNo,
 		email,
+		building,
 		city,
 		stateProvince,
 		country,
@@ -62,6 +65,20 @@ const ChannelPartnerForm = () => {
 
 
 	return (
+		<>
+			<Helmet>
+					<title> NoQu Channel Partner: Transform Time Management Together</title>
+					<meta name="description" content="Register now to become a NoQu channel partner! Revolutionize time management with our advanced queue management and attendance systems, driving innovation and efficiency across industries." />
+					<meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+					<meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+					<meta property="og:image" content="https://noqu.in/logo.png" />
+					<meta property="og:url" content="https://noqu.in/" />
+					<meta name="twitter:card" content="NoQu" />
+					<meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+					<meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+					<meta name="twitter:image" content="https://noqu.in/logo.png" />
+				</Helmet>
+
 		<div className="CareerForm">
 			<form onSubmit={handleSubmit} className="reg-form">
 				<div className="reg-form-head">
@@ -138,7 +155,6 @@ const ChannelPartnerForm = () => {
 								value={countryCode}
 								onChange={(event) => setCountryCode(event.target.value)}
 								required>
-								<option value="">Select an option</option>
 								<option value='+91'>+91</option>
 								<option value='+1-242'>+1-242</option>
 								<option value='+1-246'>+1-246</option>
@@ -386,6 +402,16 @@ const ChannelPartnerForm = () => {
 				<h5>Address Information</h5>
 
 				<div className='CareerForm_row'>
+					<label>Building / Road</label>
+					<input
+						type="text"
+						name="city"
+						value={building}
+						onChange={(event) => setBuilding(event.target.value)}
+						required
+					/>
+				</div>
+				<div className='CareerForm_row'>
 					<label>City</label>
 					<input
 						type="text"
@@ -439,6 +465,7 @@ const ChannelPartnerForm = () => {
 				</div>
 			</form>
 		</div>
+		</>
 	);
 };
 

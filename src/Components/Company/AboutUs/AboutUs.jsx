@@ -3,12 +3,27 @@ import "./AboutUs.css"
 import about from '../../../assets/about.png'
 import Anbusudar_Director from '../../../assets/Anbusudar_Director.jpg'
 import Surendernath_Director from '../../../assets/Surendernath_Director.jpg'
+import { Helmet } from 'react-helmet-async'
 
 const AboutUs = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
   return (
+    <>
+        <Helmet>
+            <title>NoQu: Revolutionizing Workforce Management with HR Payroll Software</title>
+            <meta name="description" content="NoQu transforms workforce management with innovative HR payroll software and mobile attendance, eliminating inefficiencies and saving valuable time." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+    
     <div className='AboutUs'>
         <div className="AboutUs_head">
             <h1>We at NoQu!!!</h1>
@@ -51,6 +66,7 @@ const AboutUs = () => {
         
 
     </div>
+    </>
   )
 }
 

@@ -2,12 +2,29 @@ import React, { useEffect } from 'react'
 import "./Award1.css"
 import News4 from '../../../assets/News4.jpg'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const Award1 = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
   return (
+    <>
+
+    <Helmet>
+            <title>NoQu ISO/IEC 27001:2022 Certification for Data Security</title>
+            <link rel="canonical" href="https://www.noqu.in/iso-ceritificate" />
+            <meta name="description" content="NoQu earns ISO/IEC 27001:2022 certification, demonstrating our dedication to strong data security practices and effective risk management." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='Newspage4'>
         <h1 className='TAM_h1'>ISO Certificate</h1>
         <div className="Newspage4-content1">
@@ -30,6 +47,7 @@ const Award1 = () => {
             <Link to="/Awards"><button>Back</button></Link>
         </div>
     </div>
+    </>
   )
 }
 

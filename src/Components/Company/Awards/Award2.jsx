@@ -2,12 +2,29 @@ import React, { useEffect } from 'react'
 import "./Award2.css"
 import News3 from '../../../assets/News3.jpeg'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const Award2 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
+    <>
+
+    <Helmet>
+            <title>NoQu Recognized by Startup TN: A Leader in Innovation</title>
+            <link rel="canonical" href="https://www.noqu.in/dpiit" />
+            <meta name="description" content="NoQu is honored by Startup TN, showcasing its commitment to innovation, economic growth, and job creation in the region." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='Newspage3'>
         <h1 className='TAM_h1'>StartupTN</h1>
         <div className="Newspage3-content">
@@ -23,6 +40,7 @@ const Award2 = () => {
             <Link to="/Awards"><button>Back</button></Link>
         </div>
     </div>
+    </>
   )
 }
 

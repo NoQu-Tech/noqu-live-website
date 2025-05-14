@@ -52,11 +52,11 @@ const TAM_Navbar = () => {
                   <img src={logo} alt=""/>
              </div>
              <div className="TAM_Navbar-links">
-                  <h5><Link to="/Home">NoQu Home</Link></h5>
-                  <h5><Link to="/TAM_home_page">Attendance Management</Link></h5>
+                  <h5><Link to="/home">NoQu Home</Link></h5>
+                  <h5><Link to="/tam-time-and-attendance-management">Attendance Management</Link></h5>
                   <h5><Link to="/tam-pricing">Pricing</Link></h5>
-                  <h5><Link to="/TAM_Support">Support</Link></h5>
-                  <h5><Link to="/TAM_CaseStudies">Case Studies</Link></h5>                                   
+                  <h5><Link to="/tam-support">Support</Link></h5>
+                  <h5><Link to="/tam-casestudies">Case Studies</Link></h5>                                   
                   {/* <div className='TAM_Navbar-links-call'><a href="callto:+91 7401600600"><span><img src={call} alt="" width={25}/></span><h5>+91 7401 600 600</h5></a></div> */}
              </div>
              <div className="TAM_Navbar-button">

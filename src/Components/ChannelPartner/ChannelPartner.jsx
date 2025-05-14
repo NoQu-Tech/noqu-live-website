@@ -7,12 +7,27 @@ import CP_3 from '../../assets/CP_3.svg'
 import CP_4 from '../../assets/CP_4.svg'
 import { Link } from 'react-router-dom'
 import Counter from '../../Containers/CounterUp'
+import { Helmet } from 'react-helmet-async'
 
 const ChannelPartner = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
   return (
+    <>
+    <Helmet>
+            <title>Partner with NoQu: Innovate Time Management and Queue Solutions</title>
+            <meta name="description" content="Become a NoQu channel partner and help reshape the future of time management. Offer our innovative queue management and attendance systems to save time and boost efficiency."/>
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+    
     <div className='ChannelPartner'>
           <div className="ChannelPartner_head">
             <div className="ChannelPartner_head-content fade_in_right">
@@ -58,15 +73,15 @@ const ChannelPartner = () => {
             <p>Partnering with NoQu can assuredly enhance your customer service multi-fold.</p>
             <div className="ChannelPartner_Clients_Counts">
                  <div className="ChannelPartner_Clients_Counts-box">
-                      <h1><Counter targetNumber={10000} counting={20}/>+</h1>
+                      <h1><Counter targetNumber={20000} />+</h1>
                       <p>Active Users</p>
                  </div>
                  <div className="ChannelPartner_Clients_Counts-box">
-                      <h1><Counter targetNumber={400} counting={1} />+</h1>
+                      <h1><Counter targetNumber={1000} />+</h1>
                       <p>Clients</p>
                  </div>
                  <div className="ChannelPartner_Clients_Counts-box">
-                      <h1><Counter targetNumber={12} counting={1} />+</h1>
+                      <h1><Counter targetNumber={12} />+</h1>
                       <p>Countries covered</p>
                  </div>
             </div>
@@ -82,6 +97,7 @@ const ChannelPartner = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 

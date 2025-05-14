@@ -6,11 +6,26 @@ import career_adv1 from '../../../assets/career_adv1.png'
 import career_adv2 from '../../../assets/career_adv2.png'
 import career_adv3 from '../../../assets/career_adv3.png'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async'
 const Career = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
   return (
+    <>
+        <Helmet>
+            <title>NoQu Careers: Join Our Team and Shape the Future of Technology</title>
+            <meta name="description" content="At NoQu, we’re on a mission to eliminate inefficiencies in traditional queuing systems. Join our innovative team and help transform the way people experience time." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+    
     <div className='Career'>
         <div className="Career_head">
             <h2>Want to craft greatness? <span>Join us!!</span></h2>
@@ -52,6 +67,7 @@ const Career = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 

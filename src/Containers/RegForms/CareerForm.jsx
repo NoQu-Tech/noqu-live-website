@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './RegForm.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
 
 const CareerForm = () => {
 	useEffect(() => {
@@ -88,6 +89,21 @@ const CareerForm = () => {
 
 
   return (
+	<>
+
+		<Helmet>
+				<title>NoQu Careers: Join Our Innovative Team</title>
+				<meta name="description" content="Explore exciting career opportunities at NoQu. Join our dynamic team and be a part of a company committed to innovation, growth, and making a real impact in the tech industry." />
+				<meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+				<meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+				<meta property="og:image" content="https://noqu.in/logo.png" />
+				<meta property="og:url" content="https://noqu.in/" />
+				<meta name="twitter:card" content="NoQu" />
+				<meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+				<meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+				<meta name="twitter:image" content="https://noqu.in/logo.png" />
+			</Helmet>
+
 	<div className="CareerForm">
 		<form onSubmit={handleSubmit} className="reg-form" method='POST'>
 		<div className="reg-form-head">
@@ -489,6 +505,7 @@ const CareerForm = () => {
 		</div>
 		</form>
 	</div>
+	</>
   );
 };
 

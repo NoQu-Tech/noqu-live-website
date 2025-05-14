@@ -6,6 +6,7 @@ import price3 from '../../../assets/TAM/price3.png'
 import banner_img from '../../../assets/TAM/banner_img.png'
 import TAM_bg from '../../../assets/TAM/TAM_bg.svg'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 
 const TamPricing = () => {
@@ -13,6 +14,20 @@ const TamPricing = () => {
         window.scrollTo(0, 0);
       }, []);
   return (
+    <>
+    <Helmet>
+            <title>"Explore NoQu Pricing: Face Recognition & Time Attendance Systems"</title>
+            <meta name="description" content="Discover NoQu's pricing plans tailored to your needs. Our advanced face recognition attendance system and time attendance management system offer efficient, cutting-edge solutions to optimize your time and operations." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='TAM_Pricing'>
         <div className="TAM_Pricing_head">
             <h5>Time and Attendance Management (TAM)</h5>
@@ -78,6 +93,7 @@ const TamPricing = () => {
             <Link to="https://appnoqu.com/#/login"><button>Review Plans</button></Link> 
         </div>
     </div>
+    </>
   )
 }
 

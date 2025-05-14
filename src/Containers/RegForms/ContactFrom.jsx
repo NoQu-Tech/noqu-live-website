@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./RegForm.css"
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const ContactFrom = () => {
 
@@ -44,6 +45,8 @@ const ContactFrom = () => {
 			});
 	};
 	return (
+		<>
+
 		<div className="ContactForm">
 			<form onSubmit={handleSubmit} className="reg-form">
 				<div className="contact-form-head">
@@ -546,6 +549,7 @@ const ContactFrom = () => {
 				</div>
 			</form>
 		</div>
+		</>
 	)
 }
 

@@ -54,6 +54,7 @@ import Improved_Workforce_productivity_1 from '../../../assets/Improved_Workforc
 import Eliminate_use_of_biometric_devices_1 from '../../../assets/Eliminate_use_of_biometric_devices_1.svg'
 import High_level_of_Employee_1 from '../../../assets/High_level_of_Employee_1.svg'
 import Visibility_and_transparency_1 from '../../../assets/Visibility_and_transparency_1.svg'
+import { Helmet } from 'react-helmet-async'
 // import NoQuApp from '../../NoQuApp/NoQuApp'
 
 const TAM_home_page = () => {
@@ -113,6 +114,19 @@ const TAM_home_page = () => {
 
 
   return (
+    <>
+        <Helmet>
+            <title>NoQu: Efficient Time and Attendance Management System & Tracking Software</title>
+            <meta name="description" content="NoQu’s time and attendance software simplifies employee tracking, boosting efficiency, saving time, and eliminating queues, allowing businesses to focus on what truly matters."/>
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems"/>
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management."/>
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
     <div className='TAM_home_page'>
         <div className="TAM_home_page-header">
              <h1 className='TAM_h1'>Time and Attendance Management (TAM)</h1>
@@ -164,6 +178,7 @@ const TAM_home_page = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 

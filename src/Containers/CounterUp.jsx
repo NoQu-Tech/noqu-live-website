@@ -1,54 +1,55 @@
-import React, { useState, useEffect, useRef } from 'react';
+// counter 
+import { useState, useEffect, useRef } from "react";
 
-const Counter = ({ targetNumber, counting }) => {
-  const [counter, setCounter] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const containerRef = useRef(null); // create a ref to store the container element
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setIsVisible(true);
-      }
-    }, { threshold: 1.0 });
-
-    if (containerRef.current) { // check if the ref exists
-      observer.observe(containerRef.current); // observe the container element
-    }
-
-    return () => {
-      if (containerRef.current) { // check if the ref exists
-        observer.unobserve(containerRef.current); // unobserve the container element
-      }
-    };
-  }, []);
+function Counter({ targetNumber, duration = 1300 }) {
+  const [count, setCount] = useState(0);
+  const [hasRun, setHasRun] = useState(false);
+  const counterRef = useRef(null);
 
   useEffect(() => {
-    if (isVisible) {
-      let timer = null;
-      if (targetNumber > 0) {
-        const incrementInterval = 3000 / targetNumber;
-        timer = setInterval(() => {
-          if (counter < targetNumber) {
-            setCounter((prevCounter) => prevCounter + counting);
-          } else {
-            clearInterval(timer);
-          }
-        }, incrementInterval);
-      }
-      return () => {
-        if (timer) {
-          clearInterval(timer);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasRun) {
+          setHasRun(true);
         }
-      };
+      },
+      { threshold: 0.5 } // Start when 50% is visible
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
     }
-  }, [isVisible, targetNumber, counter]);
+
+    return () => observer.disconnect();
+  }, [hasRun]);
+
+  useEffect(() => {
+    if (hasRun) {
+      const startTime = Date.now();
+
+      function updateCounter() {
+        const elapsed = Date.now() - startTime;
+        if (elapsed >= duration) {
+          setCount(targetNumber);
+          return;
+        }
+
+        const progress = elapsed / duration;
+        setCount(Math.round(progress * targetNumber));
+
+        requestAnimationFrame(updateCounter);
+      }
+
+      requestAnimationFrame(updateCounter);
+    }
+  }, [hasRun, targetNumber, duration]);
 
   return (
-    <div ref={containerRef} id="counter-container"> {/* assign the ref to the container element */}
-      <h1>{counter}</h1>
+    <div ref={counterRef} style={{ textAlign: "center", padding: "20px" }}>
+      <h1>{count}</h1>
     </div>
   );
-};
+}
 
 export default Counter;

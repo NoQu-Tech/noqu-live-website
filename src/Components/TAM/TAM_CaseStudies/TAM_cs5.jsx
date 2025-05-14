@@ -2,17 +2,33 @@ import React, { useEffect } from 'react'
 import './TAM_cs.css'
 import caseStudy5 from '../../../assets/TAM/caseStudy5.jpeg'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const TAM_cs5 = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
       const handleClick = () => {
-        const pdfUrl = 'src/assets/cs5.pdf';
+        const pdfUrl = 'assets/cs5.pdf';
         const mimeType = 'application/pdf';
         window.open(pdfUrl, '_newtab', `mime=${mimeType}`);
     };
   return (
+    <>
+
+    <Helmet>
+            <title>"Case Studies: Revolutionizing Manpower & Staffing with Smart Solutions"</title>
+            <meta name="description" content="NoQu’s employee live tracking software and geofencing attendance system optimize workforce management and eliminate inefficiencies in the manpower and staffing industry." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='TAM_cases'>
         <div className="TAM_cases-img">
             <img src={caseStudy5} alt="" />
@@ -36,11 +52,12 @@ const TAM_cs5 = () => {
                 <li>• Access control and customizable roles for secure data management.</li>
             </ul>
             <div className="TAM_cases-content-buttons">
-                <Link to="/TAM_CaseStudies"><button>back</button></Link>
+                <Link to="/tam-casestudies"><button>back</button></Link>
                 <button onClick={handleClick}>download</button>
             </div>
         </div>
     </div>
+    </>
   )
 }
 

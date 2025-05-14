@@ -12,43 +12,18 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(<Navbar_mobile />);
   const location = useLocation();
 
-  // const [visible, setVisible] = useState(true);
-  // const [lastScrollY, setLastScrollY] = useState(0);
-
-  // const handleScroll = () => {
-  //      const currentScrollY = window.scrollY;
-
-  //      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-  //        // Scrolling down
-  //        setVisible(false);
-  //      } else {
-  //        // Scrolling up
-  //        setVisible(true);
-  //      }
-
-  //      setLastScrollY(currentScrollY);
-  //    };
-
-  //    useEffect(() => {
-  //      window.addEventListener('scroll', handleScroll);
-
-  //      return () => {
-  //        window.removeEventListener('scroll', handleScroll);
-  //      };
-  //    }, [lastScrollY]);
-
   const navbarComponents = {
-    '/TAM_home_page': <TAM_mobile_nav />,
-    '/TAM_Support': <TAM_mobile_nav />,
-    '/TAM_CaseStudies': <TAM_mobile_nav />,
+    '/tam-time-and-attendance-management': <TAM_mobile_nav />,
+    '/tam-support': <TAM_mobile_nav />,
+    '/tam-caseStudies': <TAM_mobile_nav />,
     '/tam-pricing': <TAM_mobile_nav />,
-    '/TAM_cs1': <TAM_mobile_nav />,
-    '/TAM_cs2': <TAM_mobile_nav />,
-    '/TAM_cs3': <TAM_mobile_nav />,
-    '/TAM_cs4': <TAM_mobile_nav />,
-    '/TAM_cs5': <TAM_mobile_nav />,
-    '/TAM_cs6': <TAM_mobile_nav />,
-    '/TAM_cs7': <TAM_mobile_nav />,
+    '/health-care-industry': <TAM_mobile_nav />,
+    '/financial-institutions': <TAM_mobile_nav />,
+    '/supply-chain-and-logistics-industry': <TAM_mobile_nav />,
+    '/construction-industry': <TAM_mobile_nav />,
+    '/manpower-and-staffing-industry': <TAM_mobile_nav />,
+    '/retail-chain': <TAM_mobile_nav />,
+    '/manufacturing-industry': <TAM_mobile_nav />,
   };
 
   useLayoutEffect(() => {
@@ -62,13 +37,13 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-links">
         <div className='navbar-links_logo'>
-          <Link to="/Home" ><img src={logo} alt="logo" /></Link>
+          <Link to="/home" ><img src={logo} alt="logo" /></Link>
 
         </div>
         <div className="nav_link_box1">
           <div className='navbar-links_container'>
             <ul>
-              <li><p><Link to="/Home" >Home</Link></p></li>
+              <li><p><Link to="/home" >Home</Link></p></li>
               <li className='Navbar_product'>
                 <p><Link to="#" >Products</Link></p>
                 <div className='Navbar_product_list'>
@@ -76,7 +51,7 @@ const Navbar = () => {
                     <li style={{marginLeft:"0px"}}>
                       <Link to="#">NoQu Office</Link>
                       <ul className="Navbar_product_dropdown">
-                        <li><Link to="/TAM_home_page">TAM(Time And Attendence Management)</Link></li>
+                        <li><Link to="/tam-time-and-attendance-management">TAM(Time And Attendence Management)</Link></li>
                         {/* <li><Link to="/scan-homepage">NoQu Scan</Link></li> */}
                       </ul>
                     </li>
@@ -89,10 +64,10 @@ const Navbar = () => {
                 <ul className="Navbar_company_dropdown">
                 
                   <Link to="/about-us"><li>AboutUs</li></Link>
-                  <Link to="/News"><li>News</li></Link>
-                  <Link to="/Awards"><li>Awards</li></Link>
-                  <Link to="/Career"><li>Career</li></Link>
-                  <Link to="/Contact"> <li>Contact</li></Link>
+                  <Link to="/news"><li>News</li></Link>
+                  <Link to="/awards"><li>Awards</li></Link>
+                  <Link to="/career"><li>Career</li></Link>
+                  <Link to="/contact"> <li>Contact</li></Link>
                 </ul>
               </li>
               <li><p><Link to="/channel-partner" >Channel Partner</Link></p></li>

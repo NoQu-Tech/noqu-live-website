@@ -6,11 +6,25 @@ import whatsup1 from '../../../assets/whatsup1.svg'
 import callcenter1 from '../../../assets/callcenter1.svg'
 import mail1 from '../../../assets/mail1.png'
 import ContactFrom from '../../../Containers/RegForms/ContactFrom'
+import { Helmet } from 'react-helmet-async'
 const Contact = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
   return (
+    <>
+    <Helmet>
+            <title>Get in Touch with NoQu: Transforming Queues and Time Management</title>
+            <meta name="description" content="We'd love to hear from you! At NoQu, we’re transforming how people experience queues. Whether you have questions about our solutions or want to collaborate, reach out to us. Let’s reshape the future together!" />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
     <div className='Contact'>
         <h1></h1>
         <div className="Contact_types">
@@ -78,6 +92,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
+   </>
   )
 }
 

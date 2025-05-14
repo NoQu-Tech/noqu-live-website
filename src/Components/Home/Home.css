@@ -36,6 +36,7 @@
     color: #ffbb08;
     font-family: "Poppins", sans-serif;
     display: flex;
+    align-items: center;
 }
 .Homepage_Clients_Counts-box{
     display: flex;

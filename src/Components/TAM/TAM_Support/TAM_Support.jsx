@@ -6,8 +6,10 @@ import FAQs1 from '../../../assets/TAM/FAQs1.svg'
 import TAM_Help from './TAM_Help'
 import TAM_Video from './TAM_Video'
 import TAM_FAQ from './TAM_FAQ'
+import { Helmet } from 'react-helmet-async'
 
 const TAM_Support = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
@@ -16,6 +18,21 @@ const TAM_Support = () => {
                      < TAM_Video />,
                      < TAM_FAQ />]
   return (
+    <>
+
+    <Helmet>
+            <title>Get Support from NoQu: Transform Time Management with Our Systems</title>
+            <meta name="description" content="Welcome to NoQu’s support page! Access documentation, guides, and resources to get the most out of our queue management and attendance systems. Start here for a smooth setup and seamless experience." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='TAM_Support'>
             <div className="TAM_Support_head">
                 <div className='TAM_Support_head-h5'>
@@ -41,6 +58,7 @@ const TAM_Support = () => {
                 </div>
             </div>
     </div>
+    </>
   )
 }
 

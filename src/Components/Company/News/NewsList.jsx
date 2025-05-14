@@ -28,7 +28,7 @@ const NewsList = ({ newsItems }) => {
             {newsItems.map((news) => (
             <div className='newsblog' style={{ marginBottom: '20px' }}>
                 <div className="newsblog-img">
-                    <img src={`https://noqu.in${news.image}`} />
+                    <img src={`https://noqu.in/uploads/${news.thumbnail}`} />
                 </div>
                 <div className="newsblog-content">
                     <div>
@@ -36,10 +36,10 @@ const NewsList = ({ newsItems }) => {
                         <p>{news.shortContent}</p>
                     </div>
                     <span>
-                        <Link to={`/news/${news.slug}`}><button style={{cursor:"pointer"}}>Read More</button></Link>
+                        <Link to={`/news/${news.slug}`}><button>Read More</button></Link>
                     </span>
                 </div>
-                <br/>
+                <br />
             </div>
             ))}
 

@@ -9,13 +9,12 @@
 }
 .NotFound a{
     text-decoration: none;
+    margin-top: 10px;
     color: black;
-    /* font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 2rem;
-    color: #5e5e5e;
+    font-size: 15px;
+    /* color: #5e5e5e; */
     font-family: "Poppins", sans-serif;
-    font-weight: 400; */
+    font-weight: 400;
 }
 .NotFound button{
     border: none;
@@ -25,4 +24,19 @@
     color: #fff;
     font-size: 15px;
     cursor: pointer;
+}
+.NotFound p{
+    color:#5e5e5e;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Poppins";
+}
+@media screen and (max-width: 600px){
+    .NotFound img{
+        width: 90%;
+    }
+    .NotFound{
+        padding: 0px 20px;
+    }
+    
 }

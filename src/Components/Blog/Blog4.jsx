@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import "./BlogPage.css"
 import BlogPage4 from '../../assets/BlogPage4.png'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const Blog4 = () => {
 
@@ -10,6 +11,20 @@ const Blog4 = () => {
   }, []);
 
   return (
+    <>
+    <Helmet>
+            <title>How NoQu TAM Boosts Field Workforce Efficiency and Productivity</title>
+            <meta name="description" content="Learn how NoQu TAM enhances field workforce efficiency, productivity with real-time tracking, automated attendance, and seamless management for a more effective workforce." />
+            <meta property="og:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta property="og:image" content="https://noqu.in/logo.png" />
+            <meta property="og:url" content="https://noqu.in/" />
+            <meta name="twitter:card" content="NoQu" />
+            <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
+            <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
+            <meta name="twitter:image" content="https://noqu.in/logo.png" />
+        </Helmet>
+
     <div className='blog1'>
     <h1 className='TAM_h1'>How NoQu TAM improves field workforce efficiency and productivity</h1>
     <img src={BlogPage4} alt="" />
@@ -27,6 +42,7 @@ const Blog4 = () => {
 
     <Link to = "/Blog"><button>back</button></Link> 
     </div>
+    </>
   )
 }
 
