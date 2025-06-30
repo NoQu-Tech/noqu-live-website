@@ -77,7 +77,7 @@ function App() {
     }
   }, [location.pathname]);
   useEffect(() => {
-    if (location.pathname === '/tam'
+    if (location.pathname === '/tam-time-and-attendance-management'
       || location.pathname === '/tam-support'
       || location.pathname === '/tam-casestudies'
       || location.pathname === '/tam-pricing'

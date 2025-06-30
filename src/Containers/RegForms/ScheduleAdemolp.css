@@ -5,44 +5,55 @@
   width: 100%;
   padding: 20px 20px;
   background-color: #fff;
+  border-radius: 0px 0px 15px 15px;
   height: 450px;
   margin-bottom: 50px;
+  padding-left: 7%;
 }
-.from_head{
+
+.from_head {
   margin-bottom: 20px;
 }
-.schedule-a-demo{
+  .from_head_topic {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #27375d;
+    /* margin-bottom: 10px; */
+  }
+
+.schedule-a-demo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.name-form{
+.name-form {
   display: block;
 }
 
-#name-form2 label{
+#name-form2 label {
   padding-right: 20px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 5px;
 }
 
-.lp_input_row{
+.lp_input_row {
   width: 85%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.lp_Ph_num{
+.lp_Ph_num {
   display: flex;
   flex-direction: column;
   width: 85%;
   margin-bottom: 10px;
 }
 
-.lp_Ph_num input{
+.lp_Ph_num input {
   color: #5e5e5e;
   width: 70%;
   height: 40px;
@@ -52,14 +63,14 @@
   border: 1px solid black;
 }
 
-.lp_CC{
+.lp_CC {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 5px;  
+  gap: 5px;
 }
 
-.lp_CC select{
+.lp_CC select {
   width: 30% !important;
   height: 40px;
   outline-width: 0;
@@ -68,7 +79,7 @@
   padding: 0px 5px;
 }
 
-.lp_input_row input{
+.lp_input_row input {
   height: 40px;
   color: #5e5e5e;
   background-color: #fff;
@@ -90,21 +101,50 @@
   font-size: 15px;
 }
 
-.button{
-display: flex;
-align-items: center;
-justify-content: center;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sm_links{
-display: flex;
-gap: 25px;
-margin-top: 30px;
-cursor: pointer;
+.sm_links {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 550px){
-#name-form2 {
-  margin-bottom: -50px;
-}
+
+@media screen and (max-width: 550px) {
+  #name-form2 {
+    margin-bottom: -50px;
+    /* border: 1px solid #dcdcdc; */
+    border-radius: 15px;
+    padding-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .from_head {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lp-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0%;
+  }
+
+  .from_head_topic {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #27375d;
+    /* margin-bottom: 10px; */
+  }
 }

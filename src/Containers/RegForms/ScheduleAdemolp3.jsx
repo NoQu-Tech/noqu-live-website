@@ -15,7 +15,7 @@ const ScheduleAdemolp3 = () => {
 	const [fullName, setFullName] = useState('');
 	const [email, setEmail] = useState('');
 	const [phoneNo, setPhoneNo] = useState('');
-	const [countryCode, setCountryCode] = useState('');
+	const [countryCode, setCountryCode] = useState('+91');
 	const [isSending, setIsSending] = useState(false);
 	const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -59,7 +59,7 @@ const ScheduleAdemolp3 = () => {
 				<div className='schedule-a-demo'>
 					<form onSubmit={handleSubmit} id="name-form2">
 						<div className="from_head">
-							<h5 className='TAM_h1'>Book a Demo</h5>
+							<h5 className='from_head_topic'>Book a Demo</h5>
 						</div>
 						<div className='lp_input_row'>
 							<label>Name</label>
@@ -79,10 +79,10 @@ const ScheduleAdemolp3 = () => {
 									name="countryCode"
 									value={countryCode}
 									onChange={(event) => setCountryCode(event.target.value)}
+									disabled={true} // Disable the dropdown to prevent changes
 									required>
-									
-									<option value=''>Select</option>
-									<option value='+91' selected>+91</option>
+								
+									<option value='+91' disabled selected>+91</option>
 									<option value='+1-242'>+1-242</option>
 									<option value='+1-246'>+1-246</option>
 									<option value='+1-264'>+1-264</option>
@@ -317,6 +317,7 @@ const ScheduleAdemolp3 = () => {
 						<div className="button">
 							<button type="submit" disabled={isSending} >{isSending ? 'Submitting...' : 'Submit'}</button>
 						</div>
+						<p style={{ fontFamily: "Poppins", fontSize:12}}>Get Your Free Trial Now.</p>
 						<div className="sm_links">
 							<a href="https://www.facebook.com/NoQuOffice" target='blank'><img src={LP_facebook} alt="" width={40} /></a>
 							<a href="https://x.com/noqutech?t=UuSXs6NwxyH7TYjAWwa3TQ&s=08" target='blank'><img src={LP_twitter} alt="" width={40} /></a>
