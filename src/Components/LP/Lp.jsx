@@ -16,6 +16,9 @@ import icon4 from '../../assets/Lp-feature-icon-4.png';
 import icon5 from '../../assets/Lp-feature-icon-5.png';
 import icon6 from '../../assets/Lp-feature-icon-6.png';
 import icon7 from '../../assets/Lp-icon-7.png';
+import payroll from '../../assets/lp-payroll.png';
+import hr from '../../assets/lp-hr.png';
+import erp from '../../assets/lp-erp.png';
 import circle from '../../assets/circle-icon.png';
 import CTA from '../../assets/Lp-cta.png';
 import playStore from '../../assets/Store-badge.png';
@@ -24,14 +27,6 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
-const CircleIcon = ({ primary = '#00C2FF', secondary = '#E0F7FF' }) => {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24">
-      <circle cx="10" cy="10" r="6" fill={secondary} />
-      <circle cx="12" cy="12" r="6" fill={primary} />
-    </svg>
-  );
-};
 
 const LandingPage = () => {
 
@@ -44,6 +39,9 @@ const LandingPage = () => {
   const [isSending, setIsSending] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const showform = () => {   
+            window.scrollTo(0, 0);
+        }
   // Client logos data
   const clientLogos = [
     { src: client1, alt: "Client logo", className: "client-logo-1" },
@@ -99,28 +97,6 @@ const LandingPage = () => {
     { question: "What kind of support does No Qu offer?", answer: "We provide dedicated support via phone, email, and chat, with response times typically within 1 minute for chat assistance." },
     { question: "How does No Qu TAM help with payroll?", answer: "No Qu TAM - Time and Attendance Management auto-syncs attendance, leave, and shift data with your payroll system, ensuring accurate calculations and error-free salary processing." },
 
-  ];
-
-  // Store badges data
-  const storeBadges = [
-    { alt: "App Store Badge", src: "/store-badge.svg" },
-    { alt: "Google Play Badge", src: "/store-badge-1.svg" },
-  ];
-
-  // Attendance cards data
-  const attendanceCards = [
-    {
-      label: "Present",
-      value: "24",
-      bgColor: "attendance-present",
-      iconSrc: "/group-1000001254.png",
-    },
-    {
-      label: "Leave",
-      value: "06",
-      bgColor: "attendance-leave",
-      iconSrc: "/group-1000001254-1.png",
-    },
   ];
 
   const formData = {
@@ -382,7 +358,7 @@ const LandingPage = () => {
               <p className="main-content-description">
                 Schedule a free demo with our team and see how No Qu TAM fits your business needs perfectly.
               </p>
-              <button className="explore-btn">Explore Now →</button>
+              <button onClick={showform} className="explore-btn">Explore Now →</button>
             </div>
           </div>
         </div>
@@ -403,7 +379,7 @@ const LandingPage = () => {
             <div className="trust-cards-wraper">
               <div className="trust-card trust-card-1">
                 <div className="trust-card-body">
-                  <img src={circle} className='trust-card-icon icon-blue' />
+                  <img src={erp} className='trust-card-icon icon-blue' />
                   <h3>ERP Integration</h3>
                   <p>Seamlessly connects with your existing ERP systems for unified data flow.</p>
                 </div>
@@ -411,7 +387,7 @@ const LandingPage = () => {
 
               <div className="trust-card trust-card-2">
                 <div className="trust-card-body">
-                  <img src={circle} className='trust-card-icon icon-yellow' />
+                  <img src={hr} className='trust-card-icon icon-yellow' />
                   <h3>HRMS Integration</h3>
                   <p>Full compatibility with popular HRMS platforms for streamlined operations.</p>
                 </div>
@@ -419,7 +395,7 @@ const LandingPage = () => {
             </div>
             <div className="trust-card trust-card-3">
               <div className="trust-card-body">
-                <img src={circle} className='trust-card-icon icon-green' />
+                <img src={payroll} className='trust-card-icon icon-green' />
                 <h3>Customize your Payroll</h3>
                 <p>Flexible payroll processing with custom rules and automated calculations.</p>
               </div>
@@ -474,8 +450,8 @@ const LandingPage = () => {
             <div className="app-download">
               <h3 className="app-download-title">Get the App</h3>
               <div className="store-badges">
-                <a href=""><img src={playStore} alt="Play Store" /></a>
-                <a href=""><img src={appStore} alt="App Store" /></a>
+                <img src={playStore} alt="Play Store" />
+                <img src={appStore} alt="App Store" />
               </div>
             </div>
           </div>
@@ -491,8 +467,8 @@ const LandingPage = () => {
         <div className="footer-container">
           <div className="footer-copyright">© 2025 Noqu - All Rights Reserved</div>
           <div className="footer-links">
-            <a href="/privacy-policy" target='blank'>Terms of use</a>
-            <a href="/terms-and-conditions" target='blank'>Privacy policy</a>
+            <a href="/privacy-policy" target='blank' className="footer-link">Terms of use</a>
+            <a href="/terms-and-conditions" target='blank' className="footer-link">Privacy policy</a>
           </div>
         </div>
       </footer>
