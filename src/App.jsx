@@ -102,7 +102,7 @@ function App() {
       ||  location.pathname === '/lp2'
       ||  location.pathname === '/lp3'
     ) {
-      setFooter(<Footer />);
+      setFooter('');
     }
     else {
       setNavbar(<Navbar />);
