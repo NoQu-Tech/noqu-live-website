@@ -1352,11 +1352,14 @@ body {
     .hero-content h1 {
         font-size: 25px;
         text-align: center;
-        margin-top: 0 !important;
+        margin-top: 100px;
         font-weight: 400 !important;
         height: 100%;
         font-weight: 700;
         margin-bottom: 20px;
+    }
+    .form-container h1{
+        margin-top: 0px !important;
     }
 
     .hero-description {
