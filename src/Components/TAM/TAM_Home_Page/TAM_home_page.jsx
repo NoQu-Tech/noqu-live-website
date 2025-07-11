@@ -122,6 +122,7 @@ const TAM_home_page = () => {
             <meta property="og:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management."/>
             <meta property="og:image" content="https://noqu.in/logo.png" />
             <meta property="og:url" content="https://noqu.in/" />
+            <link rel="canonical" href="https://https://noqu.in/tam-time-and-attendance-management" />
             <meta name="twitter:card" content="NoQu" />
             <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
             <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />

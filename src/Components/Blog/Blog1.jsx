@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "./BlogPage.css"
-import BlogPage1 from '../../assets/BlogPage1.png'
+import BlogPage1 from   '../../assets/BlogPage1.png'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 
@@ -24,6 +24,7 @@ const Blog1 = () => {
             <meta name="twitter:title" content="NoQu: Revolutionizing Attendance Software & Queue Management Systems" />
             <meta name="twitter:description" content="NoQu is revolutionizing queues with cutting-edge attendance software and management systems, helping businesses and individuals reclaim time by eliminating waiting. Join us in reshaping time management." />
             <meta name="twitter:image" content="https://noqu.in/logo.png" />
+
         </Helmet>
 
     <div className='blog1'>

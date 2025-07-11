@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const NotFound = () => {
 
-    const [countdown, setCountdown] = useState(5); // Start countdown from 5 seconds
+    const [countdown, setCountdown] = useState(3); // Start countdown from 5 seconds
     const navigate = useNavigate();
 
     useEffect(() => {

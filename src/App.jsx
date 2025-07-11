@@ -16,7 +16,7 @@ import TAM_Support from './Components/TAM/TAM_Support/TAM_Support'
 import CareerForm from './Containers/RegForms/CareerForm'
 import ChannelPartnerForm from './Containers/RegForms/ChannelPartnerForm'
 import ScheduleAdemo from './Containers/RegForms/ScheduleAdemo'
-import {  Routes, Route } from 'react-router-dom';
+import {  Routes, Route, Navigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import TAM_cs1 from './Components/TAM/TAM_CaseStudies/TAM_cs1'
 import TAM_cs2 from './Components/TAM/TAM_CaseStudies/TAM_cs2'
@@ -79,6 +79,7 @@ function App() {
   useEffect(() => {
     if (location.pathname === '/tam-time-and-attendance-management'
       || location.pathname === '/tam-support'
+      || location.pathname === '/tam'
       || location.pathname === '/tam-casestudies'
       || location.pathname === '/tam-pricing'
       || location.pathname === '/health-care-industry'
@@ -172,6 +173,7 @@ function App() {
           <Route path='/news' element={<News />}></Route>
           <Route path='/career-form' element={<CareerForm />}></Route>
           <Route path='/tam-time-and-attendance-management' element={<TAM_home_page />}></Route>
+          <Route path="/tam" element={<Navigate to="/tam-time-and-attendance-management" replace />} />
           <Route path='/tam-pricing' element={<TamPricing />}></Route>
           <Route path='/tam-casestudies' element={<TAM_CaseStudies />}></Route>
           <Route path='/tam-support' element={<TAM_Support />}></Route>
